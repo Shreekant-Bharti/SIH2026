@@ -1,0 +1,52 @@
+{
+    "RAINFALL": {
+        "role": "Target (CHIRPS)",
+        "status": "Strictly Target Only",
+        "leakage_risk": "Critical if used as feature on day t. Allowed only as strictly past lags (t-1, t-2, etc.)."
+    },
+    "REFERENCE_RAINFALL": {
+        "role": "Coarse Reference Input (ERA5-Land)",
+        "status": "Primary Predictor / Downscaling Base",
+        "leakage_risk": "Reanalysis data. In real-time forecast operations, Numerical Weather Prediction (NWP) forecast (e.g. ECMWF IFS or IMD GFS) replaces ERA5-Land."
+    },
+    "TEMPERATURE": {
+        "role": "Meteorological Predictor (ERA5-Land 2m Temperature)",
+        "status": "Forecast-time or NWP variable",
+        "leakage_risk": "Available concurrently in NWP forecasts; in historical reanalysis it represents daily mean."
+    },
+    "HUMIDITY": {
+        "role": "Meteorological Predictor (Relative / Specific Humidity)",
+        "status": "Forecast-time or NWP variable",
+        "leakage_risk": "Available in NWP forecasts; crucial for atmospheric moisture content."
+    },
+    "WIND": {
+        "role": "Meteorological Predictor (10m Wind speed)",
+        "status": "Forecast-time or NWP variable",
+        "leakage_risk": "Available in NWP forecasts; captures convective transport."
+    },
+    "ET": {
+        "role": "Meteorological / Surface Flux (Evapotranspiration)",
+        "status": "Analysis Variable",
+        "leakage_risk": "ET is computed from cumulative daily surface energy balance. While daily integrated ET is an analysis/diagnostic variable, forecasted ET or potential ET is routinely produced by NWP models. Must be tested for incremental utility."
+    },
+    "ELEVATION": {
+        "role": "Static Orographic Feature",
+        "status": "Static / Invariant",
+        "leakage_risk": "No temporal leakage. Spatially fixed per Panchayat."
+    },
+    "SLOPE": {
+        "role": "Static Terrain Feature",
+        "status": "Static / Invariant",
+        "leakage_risk": "No temporal leakage."
+    },
+    "LANDCOVER": {
+        "role": "Static/Slow Surface Feature",
+        "status": "Static Categorical",
+        "leakage_risk": "No temporal leakage."
+    },
+    "GPCODE": {
+        "role": "Spatial Identifier",
+        "status": "Grouping / Clustered Split",
+        "leakage_risk": "High risk if treated as continuous numerical feature (would memorize spatial IDs). Must be treated as categorical or strictly used for grouping."
+    }
+}
