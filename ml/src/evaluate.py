@@ -14,15 +14,19 @@ from sklearn.metrics import mean_absolute_error, mean_squared_error, r2_score
 def compute_regression_metrics(y_true: np.ndarray, y_pred: np.ndarray) -> Dict[str, float]:
     """
     Computes MAE, RMSE, R2, Bias, and Pearson Correlation.
+
+    Contract:
+        Expects pre-clipped non-negative predictions (`y_pred >= 0`).
+        Physical clipping (e.g. at 0 mm/day) is performed upstream during prediction
+        generation in `train.py` or inference pipelines to prevent redundant double-clipping.
     """
-    y_pred_clipped = np.clip(y_pred, 0, None)
-    mae = mean_absolute_error(y_true, y_pred_clipped)
-    rmse = np.sqrt(mean_squared_error(y_true, y_pred_clipped))
-    r2 = r2_score(y_true, y_pred_clipped)
-    bias = np.mean(y_pred_clipped - y_true)
+    mae = mean_absolute_error(y_true, y_pred)
+    rmse = np.sqrt(mean_squared_error(y_true, y_pred))
+    r2 = r2_score(y_true, y_pred)
+    bias = np.mean(y_pred - y_true)
     
-    if np.std(y_true) > 1e-8 and np.std(y_pred_clipped) > 1e-8:
-        corr = float(np.corrcoef(y_true, y_pred_clipped)[0, 1])
+    if np.std(y_true) > 1e-8 and np.std(y_pred) > 1e-8:
+        corr = float(np.corrcoef(y_true, y_pred)[0, 1])
     else:
         corr = 0.0
         
@@ -38,10 +42,12 @@ def compute_regression_metrics(y_true: np.ndarray, y_pred: np.ndarray) -> Dict[s
 def compute_contingency_metrics(y_true: np.ndarray, y_pred: np.ndarray, threshold: float) -> Dict[str, float]:
     """
     Calculates POD, FAR, and CSI for precipitation threshold.
+
+    Contract:
+        Expects pre-clipped non-negative predictions (`y_pred >= 0`).
     """
-    y_pred_clipped = np.clip(y_pred, 0, None)
     obs_event = (y_true >= threshold)
-    pred_event = (y_pred_clipped >= threshold)
+    pred_event = (y_pred >= threshold)
     
     hits = np.sum(obs_event & pred_event)
     misses = np.sum(obs_event & (~pred_event))
@@ -87,11 +93,14 @@ def compute_panchayat_level_metrics(
 ) -> pd.DataFrame:
     """
     Computes performance separately for each Panchayat (GPCODE) on the test set.
-    Outputs: results/panchayat_metrics.csv
+    Outputs: results/panchayat_metrics.csv and results/spatial_panchayat_eval.csv
+    
+    Contract:
+        Expects pre-clipped non-negative predictions (`y_pred >= 0`).
     """
     os.makedirs(results_dir, exist_ok=True)
     df = test_df.copy()
-    df['PREDICTED_RAINFALL'] = np.clip(y_pred, 0, None)
+    df['PREDICTED_RAINFALL'] = y_pred
     
     records = []
     for (gpcode, gpname, block), group in df.groupby(['GPCODE', 'GPNAME', 'BLOCK']):
@@ -123,5 +132,10 @@ def compute_panchayat_level_metrics(
     panchayat_df = pd.DataFrame(records)
     out_path = os.path.join(results_dir, "panchayat_metrics.csv")
     panchayat_df.to_csv(out_path, index=False)
-    print(f"Saved Panchayat validation metrics to {out_path} ({len(panchayat_df)} Panchayats)")
+    
+    # Save spatial_panchayat_eval.csv for complete mutual consistency
+    legacy_path = os.path.join(results_dir, "spatial_panchayat_eval.csv")
+    panchayat_df.to_csv(legacy_path, index=False)
+    
+    print(f"Saved Panchayat validation metrics to {out_path} and {legacy_path} ({len(panchayat_df)} Panchayats)")
     return panchayat_df
