@@ -5,12 +5,8 @@
     "BLOCK": "Baghmara",
     "DISTRICT": "Dhanbad",
     "ELEVATION": 249,
-    "SLOPE": 3.5588596,
-    "LANDCOVER": 12,
-    "LANDCOVER_VALID": true,
-    "HAS_STATIC_MISMATCH": false,
-    "MISMATCHED_FIELDS_NEEDS_MANUAL_REVIEW": "",
-    "MISSING_STATIC_FIELDS": ""
+    "SLOPE": 3.55886,
+    "LANDCOVER": 12
   },
   {
     "GPCODE": 111723,
@@ -19,11 +15,7 @@
     "DISTRICT": "Dhanbad",
     "ELEVATION": 162,
     "SLOPE": 4.045642,
-    "LANDCOVER": 12,
-    "LANDCOVER_VALID": true,
-    "HAS_STATIC_MISMATCH": false,
-    "MISMATCHED_FIELDS_NEEDS_MANUAL_REVIEW": "",
-    "MISSING_STATIC_FIELDS": ""
+    "LANDCOVER": 12
   },
   {
     "GPCODE": 111724,
@@ -31,12 +23,8 @@
     "BLOCK": "Baghmara",
     "DISTRICT": "Dhanbad",
     "ELEVATION": 193,
-    "SLOPE": 1.3737063,
-    "LANDCOVER": 13,
-    "LANDCOVER_VALID": true,
-    "HAS_STATIC_MISMATCH": false,
-    "MISMATCHED_FIELDS_NEEDS_MANUAL_REVIEW": "",
-    "MISSING_STATIC_FIELDS": ""
+    "SLOPE": 1.373706,
+    "LANDCOVER": 13
   },
   {
     "GPCODE": 111725,
@@ -44,12 +32,8 @@
     "BLOCK": "Baghmara",
     "DISTRICT": "Dhanbad",
     "ELEVATION": 223,
-    "SLOPE": 1.8543341,
-    "LANDCOVER": 12,
-    "LANDCOVER_VALID": true,
-    "HAS_STATIC_MISMATCH": false,
-    "MISMATCHED_FIELDS_NEEDS_MANUAL_REVIEW": "",
-    "MISSING_STATIC_FIELDS": ""
+    "SLOPE": 1.854334,
+    "LANDCOVER": 12
   },
   {
     "GPCODE": 111726,
@@ -58,11 +42,7 @@
     "DISTRICT": "Dhanbad",
     "ELEVATION": 199,
     "SLOPE": 7.967115,
-    "LANDCOVER": 13,
-    "LANDCOVER_VALID": true,
-    "HAS_STATIC_MISMATCH": false,
-    "MISMATCHED_FIELDS_NEEDS_MANUAL_REVIEW": "",
-    "MISSING_STATIC_FIELDS": ""
+    "LANDCOVER": 13
   },
   {
     "GPCODE": 111727,
@@ -70,12 +50,8 @@
     "BLOCK": "Baghmara",
     "DISTRICT": "Dhanbad",
     "ELEVATION": 217,
-    "SLOPE": 2.9587758,
-    "LANDCOVER": 12,
-    "LANDCOVER_VALID": true,
-    "HAS_STATIC_MISMATCH": false,
-    "MISMATCHED_FIELDS_NEEDS_MANUAL_REVIEW": "",
-    "MISSING_STATIC_FIELDS": ""
+    "SLOPE": 2.958776,
+    "LANDCOVER": 12
   },
   {
     "GPCODE": 111728,
@@ -83,12 +59,8 @@
     "BLOCK": "Baghmara",
     "DISTRICT": "Dhanbad",
     "ELEVATION": 234,
-    "SLOPE": 1.8543341,
-    "LANDCOVER": 12,
-    "LANDCOVER_VALID": true,
-    "HAS_STATIC_MISMATCH": false,
-    "MISMATCHED_FIELDS_NEEDS_MANUAL_REVIEW": "",
-    "MISSING_STATIC_FIELDS": ""
+    "SLOPE": 1.854334,
+    "LANDCOVER": 12
   },
   {
     "GPCODE": 111729,
@@ -96,12 +68,8 @@
     "BLOCK": "Baghmara",
     "DISTRICT": "Dhanbad",
     "ELEVATION": 232,
-    "SLOPE": 2.7460077,
-    "LANDCOVER": 12,
-    "LANDCOVER_VALID": true,
-    "HAS_STATIC_MISMATCH": false,
-    "MISMATCHED_FIELDS_NEEDS_MANUAL_REVIEW": "",
-    "MISSING_STATIC_FIELDS": ""
+    "SLOPE": 2.746008,
+    "LANDCOVER": 12
   },
   {
     "GPCODE": 111730,
@@ -109,12 +77,8 @@
     "BLOCK": "Baghmara",
     "DISTRICT": "Dhanbad",
     "ELEVATION": 218,
-    "SLOPE": 7.0597444,
-    "LANDCOVER": 13,
-    "LANDCOVER_VALID": true,
-    "HAS_STATIC_MISMATCH": false,
-    "MISMATCHED_FIELDS_NEEDS_MANUAL_REVIEW": "",
-    "MISSING_STATIC_FIELDS": ""
+    "SLOPE": 7.059744,
+    "LANDCOVER": 13
   },
   {
     "GPCODE": 111731,
@@ -123,11 +87,7 @@
     "DISTRICT": "Dhanbad",
     "ELEVATION": 198,
     "SLOPE": 4.219652,
-    "LANDCOVER": 12,
-    "LANDCOVER_VALID": true,
-    "HAS_STATIC_MISMATCH": false,
-    "MISMATCHED_FIELDS_NEEDS_MANUAL_REVIEW": "",
-    "MISSING_STATIC_FIELDS": ""
+    "LANDCOVER": 12
   },
   {
     "GPCODE": 111732,
@@ -135,12 +95,8 @@
     "BLOCK": "Baghmara",
     "DISTRICT": "Dhanbad",
     "ELEVATION": 261,
-    "SLOPE": 4.7362785,
-    "LANDCOVER": 12,
-    "LANDCOVER_VALID": true,
-    "HAS_STATIC_MISMATCH": false,
-    "MISMATCHED_FIELDS_NEEDS_MANUAL_REVIEW": "",
-    "MISSING_STATIC_FIELDS": ""
+    "SLOPE": 4.736278,
+    "LANDCOVER": 12
   },
   {
     "GPCODE": 111733,
@@ -148,12 +104,8 @@
     "BLOCK": "Baghmara",
     "DISTRICT": "Dhanbad",
     "ELEVATION": 221,
-    "SLOPE": 0.92740995,
-    "LANDCOVER": 12,
-    "LANDCOVER_VALID": true,
-    "HAS_STATIC_MISMATCH": false,
-    "MISMATCHED_FIELDS_NEEDS_MANUAL_REVIEW": "",
-    "MISSING_STATIC_FIELDS": ""
+    "SLOPE": 0.92741,
+    "LANDCOVER": 12
   },
   {
     "GPCODE": 111734,
@@ -161,12 +113,8 @@
     "BLOCK": "Baghmara",
     "DISTRICT": "Dhanbad",
     "ELEVATION": 195,
-    "SLOPE": 1.3735292,
-    "LANDCOVER": 12,
-    "LANDCOVER_VALID": true,
-    "HAS_STATIC_MISMATCH": false,
-    "MISMATCHED_FIELDS_NEEDS_MANUAL_REVIEW": "",
-    "MISSING_STATIC_FIELDS": ""
+    "SLOPE": 1.373529,
+    "LANDCOVER": 12
   },
   {
     "GPCODE": 111735,
@@ -175,11 +123,7 @@
     "DISTRICT": "Dhanbad",
     "ELEVATION": 220,
     "SLOPE": 2.11314,
-    "LANDCOVER": 12,
-    "LANDCOVER_VALID": true,
-    "HAS_STATIC_MISMATCH": false,
-    "MISMATCHED_FIELDS_NEEDS_MANUAL_REVIEW": "",
-    "MISSING_STATIC_FIELDS": ""
+    "LANDCOVER": 12
   },
   {
     "GPCODE": 111736,
@@ -187,12 +131,8 @@
     "BLOCK": "Baghmara",
     "DISTRICT": "Dhanbad",
     "ELEVATION": 223,
-    "SLOPE": 3.5575247,
-    "LANDCOVER": 10,
-    "LANDCOVER_VALID": true,
-    "HAS_STATIC_MISMATCH": false,
-    "MISMATCHED_FIELDS_NEEDS_MANUAL_REVIEW": "",
-    "MISSING_STATIC_FIELDS": ""
+    "SLOPE": 3.557525,
+    "LANDCOVER": 10
   },
   {
     "GPCODE": 111738,
@@ -201,11 +141,7 @@
     "DISTRICT": "Dhanbad",
     "ELEVATION": 218,
     "SLOPE": 4.449252,
-    "LANDCOVER": 10,
-    "LANDCOVER_VALID": true,
-    "HAS_STATIC_MISMATCH": false,
-    "MISMATCHED_FIELDS_NEEDS_MANUAL_REVIEW": "",
-    "MISSING_STATIC_FIELDS": ""
+    "LANDCOVER": 10
   },
   {
     "GPCODE": 111739,
@@ -213,12 +149,8 @@
     "BLOCK": "Baghmara",
     "DISTRICT": "Dhanbad",
     "ELEVATION": 271,
-    "SLOPE": 2.1131525,
-    "LANDCOVER": 12,
-    "LANDCOVER_VALID": true,
-    "HAS_STATIC_MISMATCH": false,
-    "MISMATCHED_FIELDS_NEEDS_MANUAL_REVIEW": "",
-    "MISSING_STATIC_FIELDS": ""
+    "SLOPE": 2.113152,
+    "LANDCOVER": 12
   },
   {
     "GPCODE": 111740,
@@ -226,12 +158,8 @@
     "BLOCK": "Baghmara",
     "DISTRICT": "Dhanbad",
     "ELEVATION": 220,
-    "SLOPE": 1.3737687,
-    "LANDCOVER": 12,
-    "LANDCOVER_VALID": true,
-    "HAS_STATIC_MISMATCH": false,
-    "MISMATCHED_FIELDS_NEEDS_MANUAL_REVIEW": "",
-    "MISSING_STATIC_FIELDS": ""
+    "SLOPE": 1.373769,
+    "LANDCOVER": 12
   },
   {
     "GPCODE": 111741,
@@ -240,11 +168,7 @@
     "DISTRICT": "Dhanbad",
     "ELEVATION": 205,
     "SLOPE": 2.112698,
-    "LANDCOVER": 12,
-    "LANDCOVER_VALID": true,
-    "HAS_STATIC_MISMATCH": false,
-    "MISMATCHED_FIELDS_NEEDS_MANUAL_REVIEW": "",
-    "MISSING_STATIC_FIELDS": ""
+    "LANDCOVER": 12
   },
   {
     "GPCODE": 111742,
@@ -252,12 +176,8 @@
     "BLOCK": "Baghmara",
     "DISTRICT": "Dhanbad",
     "ELEVATION": 213,
-    "SLOPE": 2.9587438,
-    "LANDCOVER": 13,
-    "LANDCOVER_VALID": true,
-    "HAS_STATIC_MISMATCH": false,
-    "MISMATCHED_FIELDS_NEEDS_MANUAL_REVIEW": "",
-    "MISSING_STATIC_FIELDS": ""
+    "SLOPE": 2.958744,
+    "LANDCOVER": 13
   },
   {
     "GPCODE": 111743,
@@ -265,12 +185,8 @@
     "BLOCK": "Baghmara",
     "DISTRICT": "Dhanbad",
     "ELEVATION": 218,
-    "SLOPE": 4.7361765,
-    "LANDCOVER": 12,
-    "LANDCOVER_VALID": true,
-    "HAS_STATIC_MISMATCH": false,
-    "MISMATCHED_FIELDS_NEEDS_MANUAL_REVIEW": "",
-    "MISSING_STATIC_FIELDS": ""
+    "SLOPE": 4.736176,
+    "LANDCOVER": 12
   },
   {
     "GPCODE": 111744,
@@ -278,12 +194,8 @@
     "BLOCK": "Baghmara",
     "DISTRICT": "Dhanbad",
     "ELEVATION": 209,
-    "SLOPE": 3.7047918,
-    "LANDCOVER": 12,
-    "LANDCOVER_VALID": true,
-    "HAS_STATIC_MISMATCH": false,
-    "MISMATCHED_FIELDS_NEEDS_MANUAL_REVIEW": "",
-    "MISSING_STATIC_FIELDS": ""
+    "SLOPE": 3.704792,
+    "LANDCOVER": 12
   },
   {
     "GPCODE": 111745,
@@ -291,12 +203,8 @@
     "BLOCK": "Baghmara",
     "DISTRICT": "Dhanbad",
     "ELEVATION": 185,
-    "SLOPE": 3.1754224,
-    "LANDCOVER": 12,
-    "LANDCOVER_VALID": true,
-    "HAS_STATIC_MISMATCH": false,
-    "MISMATCHED_FIELDS_NEEDS_MANUAL_REVIEW": "",
-    "MISSING_STATIC_FIELDS": ""
+    "SLOPE": 3.175422,
+    "LANDCOVER": 12
   },
   {
     "GPCODE": 111746,
@@ -304,12 +212,8 @@
     "BLOCK": "Baghmara",
     "DISTRICT": "Dhanbad",
     "ELEVATION": 216,
-    "SLOPE": 1.8543341,
-    "LANDCOVER": 12,
-    "LANDCOVER_VALID": true,
-    "HAS_STATIC_MISMATCH": false,
-    "MISMATCHED_FIELDS_NEEDS_MANUAL_REVIEW": "",
-    "MISSING_STATIC_FIELDS": ""
+    "SLOPE": 1.854334,
+    "LANDCOVER": 12
   },
   {
     "GPCODE": 111747,
@@ -318,11 +222,7 @@
     "DISTRICT": "Dhanbad",
     "ELEVATION": 190,
     "SLOPE": 4.448556,
-    "LANDCOVER": 12,
-    "LANDCOVER_VALID": true,
-    "HAS_STATIC_MISMATCH": false,
-    "MISMATCHED_FIELDS_NEEDS_MANUAL_REVIEW": "",
-    "MISSING_STATIC_FIELDS": ""
+    "LANDCOVER": 12
   },
   {
     "GPCODE": 111748,
@@ -330,12 +230,8 @@
     "BLOCK": "Baghmara",
     "DISTRICT": "Dhanbad",
     "ELEVATION": 201,
-    "SLOPE": 4.6273675,
-    "LANDCOVER": 10,
-    "LANDCOVER_VALID": true,
-    "HAS_STATIC_MISMATCH": false,
-    "MISMATCHED_FIELDS_NEEDS_MANUAL_REVIEW": "",
-    "MISSING_STATIC_FIELDS": ""
+    "SLOPE": 4.627368,
+    "LANDCOVER": 10
   },
   {
     "GPCODE": 111749,
@@ -343,12 +239,8 @@
     "BLOCK": "Baghmara",
     "DISTRICT": "Dhanbad",
     "ELEVATION": 233,
-    "SLOPE": 2.2284608,
-    "LANDCOVER": 12,
-    "LANDCOVER_VALID": true,
-    "HAS_STATIC_MISMATCH": false,
-    "MISMATCHED_FIELDS_NEEDS_MANUAL_REVIEW": "",
-    "MISSING_STATIC_FIELDS": ""
+    "SLOPE": 2.228461,
+    "LANDCOVER": 12
   },
   {
     "GPCODE": 111750,
@@ -356,12 +248,8 @@
     "BLOCK": "Baghmara",
     "DISTRICT": "Dhanbad",
     "ELEVATION": 211,
-    "SLOPE": 1.3735579,
-    "LANDCOVER": 10,
-    "LANDCOVER_VALID": true,
-    "HAS_STATIC_MISMATCH": false,
-    "MISMATCHED_FIELDS_NEEDS_MANUAL_REVIEW": "",
-    "MISSING_STATIC_FIELDS": ""
+    "SLOPE": 1.373558,
+    "LANDCOVER": 10
   },
   {
     "GPCODE": 111751,
@@ -369,12 +257,8 @@
     "BLOCK": "Baghmara",
     "DISTRICT": "Dhanbad",
     "ELEVATION": 191,
-    "SLOPE": 2.7454972,
-    "LANDCOVER": 12,
-    "LANDCOVER_VALID": true,
-    "HAS_STATIC_MISMATCH": false,
-    "MISMATCHED_FIELDS_NEEDS_MANUAL_REVIEW": "",
-    "MISSING_STATIC_FIELDS": ""
+    "SLOPE": 2.745497,
+    "LANDCOVER": 12
   },
   {
     "GPCODE": 111752,
@@ -382,12 +266,8 @@
     "BLOCK": "Baghmara",
     "DISTRICT": "Dhanbad",
     "ELEVATION": 205,
-    "SLOPE": 4.6273675,
-    "LANDCOVER": 12,
-    "LANDCOVER_VALID": true,
-    "HAS_STATIC_MISMATCH": false,
-    "MISMATCHED_FIELDS_NEEDS_MANUAL_REVIEW": "",
-    "MISSING_STATIC_FIELDS": ""
+    "SLOPE": 4.627368,
+    "LANDCOVER": 12
   },
   {
     "GPCODE": 111753,
@@ -395,12 +275,8 @@
     "BLOCK": "Baghmara",
     "DISTRICT": "Dhanbad",
     "ELEVATION": 233,
-    "SLOPE": 3.1759117,
-    "LANDCOVER": 12,
-    "LANDCOVER_VALID": true,
-    "HAS_STATIC_MISMATCH": false,
-    "MISMATCHED_FIELDS_NEEDS_MANUAL_REVIEW": "",
-    "MISSING_STATIC_FIELDS": ""
+    "SLOPE": 3.175912,
+    "LANDCOVER": 12
   },
   {
     "GPCODE": 111754,
@@ -409,11 +285,7 @@
     "DISTRICT": "Dhanbad",
     "ELEVATION": 210,
     "SLOPE": 2.227796,
-    "LANDCOVER": 12,
-    "LANDCOVER_VALID": true,
-    "HAS_STATIC_MISMATCH": false,
-    "MISMATCHED_FIELDS_NEEDS_MANUAL_REVIEW": "",
-    "MISSING_STATIC_FIELDS": ""
+    "LANDCOVER": 12
   },
   {
     "GPCODE": 111755,
@@ -421,12 +293,8 @@
     "BLOCK": "Baghmara",
     "DISTRICT": "Dhanbad",
     "ELEVATION": 237,
-    "SLOPE": 1.3741436,
-    "LANDCOVER": 12,
-    "LANDCOVER_VALID": true,
-    "HAS_STATIC_MISMATCH": false,
-    "MISMATCHED_FIELDS_NEEDS_MANUAL_REVIEW": "",
-    "MISSING_STATIC_FIELDS": ""
+    "SLOPE": 1.374144,
+    "LANDCOVER": 12
   },
   {
     "GPCODE": 111756,
@@ -434,12 +302,8 @@
     "BLOCK": "Baghmara",
     "DISTRICT": "Dhanbad",
     "ELEVATION": 229,
-    "SLOPE": 2.9588907,
-    "LANDCOVER": 12,
-    "LANDCOVER_VALID": true,
-    "HAS_STATIC_MISMATCH": false,
-    "MISMATCHED_FIELDS_NEEDS_MANUAL_REVIEW": "",
-    "MISSING_STATIC_FIELDS": ""
+    "SLOPE": 2.958891,
+    "LANDCOVER": 12
   },
   {
     "GPCODE": 111757,
@@ -447,12 +311,8 @@
     "BLOCK": "Baghmara",
     "DISTRICT": "Dhanbad",
     "ELEVATION": 181,
-    "SLOPE": 4.4478607,
-    "LANDCOVER": 12,
-    "LANDCOVER_VALID": true,
-    "HAS_STATIC_MISMATCH": false,
-    "MISMATCHED_FIELDS_NEEDS_MANUAL_REVIEW": "",
-    "MISSING_STATIC_FIELDS": ""
+    "SLOPE": 4.447861,
+    "LANDCOVER": 12
   },
   {
     "GPCODE": 111758,
@@ -461,11 +321,7 @@
     "DISTRICT": "Dhanbad",
     "ELEVATION": 199,
     "SLOPE": 5.901695,
-    "LANDCOVER": 13,
-    "LANDCOVER_VALID": true,
-    "HAS_STATIC_MISMATCH": false,
-    "MISMATCHED_FIELDS_NEEDS_MANUAL_REVIEW": "",
-    "MISSING_STATIC_FIELDS": ""
+    "LANDCOVER": 13
   },
   {
     "GPCODE": 111759,
@@ -473,12 +329,8 @@
     "BLOCK": "Baghmara",
     "DISTRICT": "Dhanbad",
     "ELEVATION": 192,
-    "SLOPE": 2.7456758,
-    "LANDCOVER": 10,
-    "LANDCOVER_VALID": true,
-    "HAS_STATIC_MISMATCH": false,
-    "MISMATCHED_FIELDS_NEEDS_MANUAL_REVIEW": "",
-    "MISSING_STATIC_FIELDS": ""
+    "SLOPE": 2.745676,
+    "LANDCOVER": 10
   },
   {
     "GPCODE": 111760,
@@ -486,12 +338,8 @@
     "BLOCK": "Baghmara",
     "DISTRICT": "Dhanbad",
     "ELEVATION": 222,
-    "SLOPE": 1.0134516,
-    "LANDCOVER": 13,
-    "LANDCOVER_VALID": true,
-    "HAS_STATIC_MISMATCH": false,
-    "MISMATCHED_FIELDS_NEEDS_MANUAL_REVIEW": "",
-    "MISSING_STATIC_FIELDS": ""
+    "SLOPE": 1.013452,
+    "LANDCOVER": 13
   },
   {
     "GPCODE": 111761,
@@ -499,12 +347,8 @@
     "BLOCK": "Baghmara",
     "DISTRICT": "Dhanbad",
     "ELEVATION": 208,
-    "SLOPE": 4.7856593,
-    "LANDCOVER": 13,
-    "LANDCOVER_VALID": true,
-    "HAS_STATIC_MISMATCH": false,
-    "MISMATCHED_FIELDS_NEEDS_MANUAL_REVIEW": "",
-    "MISSING_STATIC_FIELDS": ""
+    "SLOPE": 4.785659,
+    "LANDCOVER": 13
   },
   {
     "GPCODE": 111762,
@@ -512,12 +356,8 @@
     "BLOCK": "Baghmara",
     "DISTRICT": "Dhanbad",
     "ELEVATION": 223,
-    "SLOPE": 1.3737704,
-    "LANDCOVER": 12,
-    "LANDCOVER_VALID": true,
-    "HAS_STATIC_MISMATCH": false,
-    "MISMATCHED_FIELDS_NEEDS_MANUAL_REVIEW": "",
-    "MISSING_STATIC_FIELDS": ""
+    "SLOPE": 1.37377,
+    "LANDCOVER": 12
   },
   {
     "GPCODE": 111763,
@@ -525,12 +365,8 @@
     "BLOCK": "Baghmara",
     "DISTRICT": "Dhanbad",
     "ELEVATION": 202,
-    "SLOPE": 2.1129653,
-    "LANDCOVER": 12,
-    "LANDCOVER_VALID": true,
-    "HAS_STATIC_MISMATCH": false,
-    "MISMATCHED_FIELDS_NEEDS_MANUAL_REVIEW": "",
-    "MISSING_STATIC_FIELDS": ""
+    "SLOPE": 2.112965,
+    "LANDCOVER": 12
   },
   {
     "GPCODE": 111764,
@@ -539,11 +375,7 @@
     "DISTRICT": "Dhanbad",
     "ELEVATION": 193,
     "SLOPE": 16.941484,
-    "LANDCOVER": 13,
-    "LANDCOVER_VALID": true,
-    "HAS_STATIC_MISMATCH": false,
-    "MISMATCHED_FIELDS_NEEDS_MANUAL_REVIEW": "",
-    "MISSING_STATIC_FIELDS": ""
+    "LANDCOVER": 13
   },
   {
     "GPCODE": 111766,
@@ -551,12 +383,8 @@
     "BLOCK": "Baghmara",
     "DISTRICT": "Dhanbad",
     "ELEVATION": 236,
-    "SLOPE": 1.0137702,
-    "LANDCOVER": 12,
-    "LANDCOVER_VALID": true,
-    "HAS_STATIC_MISMATCH": false,
-    "MISMATCHED_FIELDS_NEEDS_MANUAL_REVIEW": "",
-    "MISSING_STATIC_FIELDS": ""
+    "SLOPE": 1.01377,
+    "LANDCOVER": 12
   },
   {
     "GPCODE": 111767,
@@ -564,12 +392,8 @@
     "BLOCK": "Baghmara",
     "DISTRICT": "Dhanbad",
     "ELEVATION": 218,
-    "SLOPE": 4.1526785,
-    "LANDCOVER": 12,
-    "LANDCOVER_VALID": true,
-    "HAS_STATIC_MISMATCH": false,
-    "MISMATCHED_FIELDS_NEEDS_MANUAL_REVIEW": "",
-    "MISSING_STATIC_FIELDS": ""
+    "SLOPE": 4.152679,
+    "LANDCOVER": 12
   },
   {
     "GPCODE": 111768,
@@ -577,12 +401,8 @@
     "BLOCK": "Baghmara",
     "DISTRICT": "Dhanbad",
     "ELEVATION": 221,
-    "SLOPE": 2.7802885,
-    "LANDCOVER": 12,
-    "LANDCOVER_VALID": true,
-    "HAS_STATIC_MISMATCH": false,
-    "MISMATCHED_FIELDS_NEEDS_MANUAL_REVIEW": "",
-    "MISSING_STATIC_FIELDS": ""
+    "SLOPE": 2.780288,
+    "LANDCOVER": 12
   },
   {
     "GPCODE": 111769,
@@ -590,12 +410,8 @@
     "BLOCK": "Baghmara",
     "DISTRICT": "Dhanbad",
     "ELEVATION": 210,
-    "SLOPE": 2.7452807,
-    "LANDCOVER": 12,
-    "LANDCOVER_VALID": true,
-    "HAS_STATIC_MISMATCH": false,
-    "MISMATCHED_FIELDS_NEEDS_MANUAL_REVIEW": "",
-    "MISSING_STATIC_FIELDS": ""
+    "SLOPE": 2.745281,
+    "LANDCOVER": 12
   },
   {
     "GPCODE": 111770,
@@ -603,12 +419,8 @@
     "BLOCK": "Baghmara",
     "DISTRICT": "Dhanbad",
     "ELEVATION": 193,
-    "SLOPE": 3.1744516,
-    "LANDCOVER": 12,
-    "LANDCOVER_VALID": true,
-    "HAS_STATIC_MISMATCH": false,
-    "MISMATCHED_FIELDS_NEEDS_MANUAL_REVIEW": "",
-    "MISSING_STATIC_FIELDS": ""
+    "SLOPE": 3.174452,
+    "LANDCOVER": 12
   },
   {
     "GPCODE": 111771,
@@ -616,12 +428,8 @@
     "BLOCK": "Baghmara",
     "DISTRICT": "Dhanbad",
     "ELEVATION": 228,
-    "SLOPE": 2.2288706,
-    "LANDCOVER": 12,
-    "LANDCOVER_VALID": true,
-    "HAS_STATIC_MISMATCH": false,
-    "MISMATCHED_FIELDS_NEEDS_MANUAL_REVIEW": "",
-    "MISSING_STATIC_FIELDS": ""
+    "SLOPE": 2.228871,
+    "LANDCOVER": 12
   },
   {
     "GPCODE": 111772,
@@ -630,11 +438,7 @@
     "DISTRICT": "Dhanbad",
     "ELEVATION": 222,
     "SLOPE": 4.220385,
-    "LANDCOVER": 12,
-    "LANDCOVER_VALID": true,
-    "HAS_STATIC_MISMATCH": false,
-    "MISMATCHED_FIELDS_NEEDS_MANUAL_REVIEW": "",
-    "MISSING_STATIC_FIELDS": ""
+    "LANDCOVER": 12
   },
   {
     "GPCODE": 111773,
@@ -642,12 +446,8 @@
     "BLOCK": "Baghmara",
     "DISTRICT": "Dhanbad",
     "ELEVATION": 239,
-    "SLOPE": 2.0277221,
-    "LANDCOVER": 12,
-    "LANDCOVER_VALID": true,
-    "HAS_STATIC_MISMATCH": false,
-    "MISMATCHED_FIELDS_NEEDS_MANUAL_REVIEW": "",
-    "MISSING_STATIC_FIELDS": ""
+    "SLOPE": 2.027722,
+    "LANDCOVER": 12
   },
   {
     "GPCODE": 111774,
@@ -656,11 +456,7 @@
     "DISTRICT": "Dhanbad",
     "ELEVATION": 254,
     "SLOPE": 4.220321,
-    "LANDCOVER": 12,
-    "LANDCOVER_VALID": true,
-    "HAS_STATIC_MISMATCH": false,
-    "MISMATCHED_FIELDS_NEEDS_MANUAL_REVIEW": "",
-    "MISSING_STATIC_FIELDS": ""
+    "LANDCOVER": 12
   },
   {
     "GPCODE": 111775,
@@ -668,12 +464,8 @@
     "BLOCK": "Baghmara",
     "DISTRICT": "Dhanbad",
     "ELEVATION": 187,
-    "SLOPE": 1.0131122,
-    "LANDCOVER": 12,
-    "LANDCOVER_VALID": true,
-    "HAS_STATIC_MISMATCH": false,
-    "MISMATCHED_FIELDS_NEEDS_MANUAL_REVIEW": "",
-    "MISSING_STATIC_FIELDS": ""
+    "SLOPE": 1.013112,
+    "LANDCOVER": 12
   },
   {
     "GPCODE": 111776,
@@ -681,12 +473,8 @@
     "BLOCK": "Baghmara",
     "DISTRICT": "Dhanbad",
     "ELEVATION": 197,
-    "SLOPE": 2.1128616,
-    "LANDCOVER": 10,
-    "LANDCOVER_VALID": true,
-    "HAS_STATIC_MISMATCH": false,
-    "MISMATCHED_FIELDS_NEEDS_MANUAL_REVIEW": "",
-    "MISSING_STATIC_FIELDS": ""
+    "SLOPE": 2.112862,
+    "LANDCOVER": 10
   },
   {
     "GPCODE": 111777,
@@ -695,11 +483,7 @@
     "DISTRICT": "Dhanbad",
     "ELEVATION": 236,
     "SLOPE": 0.0,
-    "LANDCOVER": 12,
-    "LANDCOVER_VALID": true,
-    "HAS_STATIC_MISMATCH": false,
-    "MISMATCHED_FIELDS_NEEDS_MANUAL_REVIEW": "",
-    "MISSING_STATIC_FIELDS": ""
+    "LANDCOVER": 12
   },
   {
     "GPCODE": 111778,
@@ -708,11 +492,7 @@
     "DISTRICT": "Dhanbad",
     "ELEVATION": 198,
     "SLOPE": 1.373279,
-    "LANDCOVER": 12,
-    "LANDCOVER_VALID": true,
-    "HAS_STATIC_MISMATCH": false,
-    "MISMATCHED_FIELDS_NEEDS_MANUAL_REVIEW": "",
-    "MISSING_STATIC_FIELDS": ""
+    "LANDCOVER": 12
   },
   {
     "GPCODE": 111779,
@@ -720,12 +500,8 @@
     "BLOCK": "Baghmara",
     "DISTRICT": "Dhanbad",
     "ELEVATION": 194,
-    "SLOPE": 2.1128864,
-    "LANDCOVER": 10,
-    "LANDCOVER_VALID": true,
-    "HAS_STATIC_MISMATCH": false,
-    "MISMATCHED_FIELDS_NEEDS_MANUAL_REVIEW": "",
-    "MISSING_STATIC_FIELDS": ""
+    "SLOPE": 2.112886,
+    "LANDCOVER": 10
   },
   {
     "GPCODE": 111780,
@@ -733,12 +509,8 @@
     "BLOCK": "Baghmara",
     "DISTRICT": "Dhanbad",
     "ELEVATION": 188,
-    "SLOPE": 1.3732536,
-    "LANDCOVER": 12,
-    "LANDCOVER_VALID": true,
-    "HAS_STATIC_MISMATCH": false,
-    "MISMATCHED_FIELDS_NEEDS_MANUAL_REVIEW": "",
-    "MISSING_STATIC_FIELDS": ""
+    "SLOPE": 1.373254,
+    "LANDCOVER": 12
   },
   {
     "GPCODE": 111781,
@@ -746,12 +518,8 @@
     "BLOCK": "Baghmara",
     "DISTRICT": "Dhanbad",
     "ELEVATION": 203,
-    "SLOPE": 1.8543341,
-    "LANDCOVER": 13,
-    "LANDCOVER_VALID": true,
-    "HAS_STATIC_MISMATCH": false,
-    "MISMATCHED_FIELDS_NEEDS_MANUAL_REVIEW": "",
-    "MISSING_STATIC_FIELDS": ""
+    "SLOPE": 1.854334,
+    "LANDCOVER": 13
   },
   {
     "GPCODE": 111782,
@@ -760,11 +528,7 @@
     "DISTRICT": "Dhanbad",
     "ELEVATION": 203,
     "SLOPE": 1.37333,
-    "LANDCOVER": 12,
-    "LANDCOVER_VALID": true,
-    "HAS_STATIC_MISMATCH": false,
-    "MISMATCHED_FIELDS_NEEDS_MANUAL_REVIEW": "",
-    "MISSING_STATIC_FIELDS": ""
+    "LANDCOVER": 12
   },
   {
     "GPCODE": 111783,
@@ -772,12 +536,8 @@
     "BLOCK": "Baliapur",
     "DISTRICT": "Dhanbad",
     "ELEVATION": 203,
-    "SLOPE": 2.7451186,
-    "LANDCOVER": 12,
-    "LANDCOVER_VALID": true,
-    "HAS_STATIC_MISMATCH": false,
-    "MISMATCHED_FIELDS_NEEDS_MANUAL_REVIEW": "",
-    "MISSING_STATIC_FIELDS": ""
+    "SLOPE": 2.745119,
+    "LANDCOVER": 12
   },
   {
     "GPCODE": 111784,
@@ -786,11 +546,7 @@
     "DISTRICT": "Dhanbad",
     "ELEVATION": 233,
     "SLOPE": 0.0,
-    "LANDCOVER": 10,
-    "LANDCOVER_VALID": true,
-    "HAS_STATIC_MISMATCH": false,
-    "MISMATCHED_FIELDS_NEEDS_MANUAL_REVIEW": "",
-    "MISSING_STATIC_FIELDS": ""
+    "LANDCOVER": 10
   },
   {
     "GPCODE": 111785,
@@ -798,12 +554,8 @@
     "BLOCK": "Baliapur",
     "DISTRICT": "Dhanbad",
     "ELEVATION": 162,
-    "SLOPE": 0.92740995,
-    "LANDCOVER": 12,
-    "LANDCOVER_VALID": true,
-    "HAS_STATIC_MISMATCH": false,
-    "MISMATCHED_FIELDS_NEEDS_MANUAL_REVIEW": "",
-    "MISSING_STATIC_FIELDS": ""
+    "SLOPE": 0.92741,
+    "LANDCOVER": 12
   },
   {
     "GPCODE": 111786,
@@ -811,12 +563,8 @@
     "BLOCK": "Baliapur",
     "DISTRICT": "Dhanbad",
     "ELEVATION": 171,
-    "SLOPE": 1.0129654,
-    "LANDCOVER": 12,
-    "LANDCOVER_VALID": true,
-    "HAS_STATIC_MISMATCH": false,
-    "MISMATCHED_FIELDS_NEEDS_MANUAL_REVIEW": "",
-    "MISSING_STATIC_FIELDS": ""
+    "SLOPE": 1.012965,
+    "LANDCOVER": 12
   },
   {
     "GPCODE": 111788,
@@ -824,12 +572,8 @@
     "BLOCK": "Baliapur",
     "DISTRICT": "Dhanbad",
     "ELEVATION": 190,
-    "SLOPE": 0.92740995,
-    "LANDCOVER": 12,
-    "LANDCOVER_VALID": true,
-    "HAS_STATIC_MISMATCH": false,
-    "MISMATCHED_FIELDS_NEEDS_MANUAL_REVIEW": "",
-    "MISSING_STATIC_FIELDS": ""
+    "SLOPE": 0.92741,
+    "LANDCOVER": 12
   },
   {
     "GPCODE": 111789,
@@ -837,12 +581,8 @@
     "BLOCK": "Baliapur",
     "DISTRICT": "Dhanbad",
     "ELEVATION": 190,
-    "SLOPE": 2.9585423,
-    "LANDCOVER": 12,
-    "LANDCOVER_VALID": true,
-    "HAS_STATIC_MISMATCH": false,
-    "MISMATCHED_FIELDS_NEEDS_MANUAL_REVIEW": "",
-    "MISSING_STATIC_FIELDS": ""
+    "SLOPE": 2.958542,
+    "LANDCOVER": 12
   },
   {
     "GPCODE": 111790,
@@ -851,11 +591,7 @@
     "DISTRICT": "Dhanbad",
     "ELEVATION": 147,
     "SLOPE": 4.219171,
-    "LANDCOVER": 12,
-    "LANDCOVER_VALID": true,
-    "HAS_STATIC_MISMATCH": false,
-    "MISMATCHED_FIELDS_NEEDS_MANUAL_REVIEW": "",
-    "MISSING_STATIC_FIELDS": ""
+    "LANDCOVER": 12
   },
   {
     "GPCODE": 111791,
@@ -863,12 +599,8 @@
     "BLOCK": "Baliapur",
     "DISTRICT": "Dhanbad",
     "ELEVATION": 216,
-    "SLOPE": 3.8400848,
-    "LANDCOVER": 10,
-    "LANDCOVER_VALID": true,
-    "HAS_STATIC_MISMATCH": false,
-    "MISMATCHED_FIELDS_NEEDS_MANUAL_REVIEW": "",
-    "MISSING_STATIC_FIELDS": ""
+    "SLOPE": 3.840085,
+    "LANDCOVER": 10
   },
   {
     "GPCODE": 111792,
@@ -876,12 +608,8 @@
     "BLOCK": "Baliapur",
     "DISTRICT": "Dhanbad",
     "ELEVATION": 156,
-    "SLOPE": 2.2273371,
-    "LANDCOVER": 12,
-    "LANDCOVER_VALID": true,
-    "HAS_STATIC_MISMATCH": false,
-    "MISMATCHED_FIELDS_NEEDS_MANUAL_REVIEW": "",
-    "MISSING_STATIC_FIELDS": ""
+    "SLOPE": 2.227337,
+    "LANDCOVER": 12
   },
   {
     "GPCODE": 111793,
@@ -889,12 +617,8 @@
     "BLOCK": "Baliapur",
     "DISTRICT": "Dhanbad",
     "ELEVATION": 145,
-    "SLOPE": 3.8399966,
-    "LANDCOVER": 12,
-    "LANDCOVER_VALID": true,
-    "HAS_STATIC_MISMATCH": false,
-    "MISMATCHED_FIELDS_NEEDS_MANUAL_REVIEW": "",
-    "MISSING_STATIC_FIELDS": ""
+    "SLOPE": 3.839997,
+    "LANDCOVER": 12
   },
   {
     "GPCODE": 111794,
@@ -903,11 +627,7 @@
     "DISTRICT": "Dhanbad",
     "ELEVATION": 130,
     "SLOPE": 7.480796,
-    "LANDCOVER": 12,
-    "LANDCOVER_VALID": true,
-    "HAS_STATIC_MISMATCH": false,
-    "MISMATCHED_FIELDS_NEEDS_MANUAL_REVIEW": "",
-    "MISSING_STATIC_FIELDS": ""
+    "LANDCOVER": 12
   },
   {
     "GPCODE": 111795,
@@ -915,12 +635,8 @@
     "BLOCK": "Baliapur",
     "DISTRICT": "Dhanbad",
     "ELEVATION": 194,
-    "SLOPE": 2.0260792,
-    "LANDCOVER": 12,
-    "LANDCOVER_VALID": true,
-    "HAS_STATIC_MISMATCH": false,
-    "MISMATCHED_FIELDS_NEEDS_MANUAL_REVIEW": "",
-    "MISSING_STATIC_FIELDS": ""
+    "SLOPE": 2.026079,
+    "LANDCOVER": 12
   },
   {
     "GPCODE": 111796,
@@ -928,12 +644,8 @@
     "BLOCK": "Baliapur",
     "DISTRICT": "Dhanbad",
     "ELEVATION": 207,
-    "SLOPE": 0.92740995,
-    "LANDCOVER": 12,
-    "LANDCOVER_VALID": true,
-    "HAS_STATIC_MISMATCH": false,
-    "MISMATCHED_FIELDS_NEEDS_MANUAL_REVIEW": "",
-    "MISSING_STATIC_FIELDS": ""
+    "SLOPE": 0.92741,
+    "LANDCOVER": 12
   },
   {
     "GPCODE": 111797,
@@ -941,12 +653,8 @@
     "BLOCK": "Baliapur",
     "DISTRICT": "Dhanbad",
     "ELEVATION": 199,
-    "SLOPE": 2.7802885,
-    "LANDCOVER": 12,
-    "LANDCOVER_VALID": true,
-    "HAS_STATIC_MISMATCH": false,
-    "MISMATCHED_FIELDS_NEEDS_MANUAL_REVIEW": "",
-    "MISSING_STATIC_FIELDS": ""
+    "SLOPE": 2.780288,
+    "LANDCOVER": 12
   },
   {
     "GPCODE": 111798,
@@ -954,12 +662,8 @@
     "BLOCK": "Baliapur",
     "DISTRICT": "Dhanbad",
     "ELEVATION": 211,
-    "SLOPE": 4.0458393,
-    "LANDCOVER": 12,
-    "LANDCOVER_VALID": true,
-    "HAS_STATIC_MISMATCH": false,
-    "MISMATCHED_FIELDS_NEEDS_MANUAL_REVIEW": "",
-    "MISSING_STATIC_FIELDS": ""
+    "SLOPE": 4.045839,
+    "LANDCOVER": 12
   },
   {
     "GPCODE": 111799,
@@ -968,11 +672,7 @@
     "DISTRICT": "Dhanbad",
     "ELEVATION": 211,
     "SLOPE": 3.175212,
-    "LANDCOVER": 12,
-    "LANDCOVER_VALID": true,
-    "HAS_STATIC_MISMATCH": false,
-    "MISMATCHED_FIELDS_NEEDS_MANUAL_REVIEW": "",
-    "MISSING_STATIC_FIELDS": ""
+    "LANDCOVER": 12
   },
   {
     "GPCODE": 111800,
@@ -980,12 +680,8 @@
     "BLOCK": "Baliapur",
     "DISTRICT": "Dhanbad",
     "ELEVATION": 204,
-    "SLOPE": 5.0479813,
-    "LANDCOVER": 12,
-    "LANDCOVER_VALID": true,
-    "HAS_STATIC_MISMATCH": false,
-    "MISMATCHED_FIELDS_NEEDS_MANUAL_REVIEW": "",
-    "MISSING_STATIC_FIELDS": ""
+    "SLOPE": 5.047981,
+    "LANDCOVER": 12
   },
   {
     "GPCODE": 111801,
@@ -994,11 +690,7 @@
     "DISTRICT": "Dhanbad",
     "ELEVATION": 174,
     "SLOPE": 4.046364,
-    "LANDCOVER": 12,
-    "LANDCOVER_VALID": true,
-    "HAS_STATIC_MISMATCH": false,
-    "MISMATCHED_FIELDS_NEEDS_MANUAL_REVIEW": "",
-    "MISSING_STATIC_FIELDS": ""
+    "LANDCOVER": 12
   },
   {
     "GPCODE": 111802,
@@ -1007,11 +699,7 @@
     "DISTRICT": "Dhanbad",
     "ELEVATION": 184,
     "SLOPE": 3.437662,
-    "LANDCOVER": 12,
-    "LANDCOVER_VALID": true,
-    "HAS_STATIC_MISMATCH": false,
-    "MISMATCHED_FIELDS_NEEDS_MANUAL_REVIEW": "",
-    "MISSING_STATIC_FIELDS": ""
+    "LANDCOVER": 12
   },
   {
     "GPCODE": 111803,
@@ -1020,11 +708,7 @@
     "DISTRICT": "Dhanbad",
     "ELEVATION": 196,
     "SLOPE": 1.373443,
-    "LANDCOVER": 13,
-    "LANDCOVER_VALID": true,
-    "HAS_STATIC_MISMATCH": false,
-    "MISMATCHED_FIELDS_NEEDS_MANUAL_REVIEW": "",
-    "MISSING_STATIC_FIELDS": ""
+    "LANDCOVER": 13
   },
   {
     "GPCODE": 111804,
@@ -1033,11 +717,7 @@
     "DISTRICT": "Dhanbad",
     "ELEVATION": 177,
     "SLOPE": 0.0,
-    "LANDCOVER": 12,
-    "LANDCOVER_VALID": true,
-    "HAS_STATIC_MISMATCH": false,
-    "MISMATCHED_FIELDS_NEEDS_MANUAL_REVIEW": "",
-    "MISSING_STATIC_FIELDS": ""
+    "LANDCOVER": 12
   },
   {
     "GPCODE": 111805,
@@ -1045,12 +725,8 @@
     "BLOCK": "Dhanbad",
     "DISTRICT": "Dhanbad",
     "ELEVATION": 222,
-    "SLOPE": 2.9587512,
-    "LANDCOVER": 12,
-    "LANDCOVER_VALID": true,
-    "HAS_STATIC_MISMATCH": false,
-    "MISMATCHED_FIELDS_NEEDS_MANUAL_REVIEW": "",
-    "MISSING_STATIC_FIELDS": ""
+    "SLOPE": 2.958751,
+    "LANDCOVER": 12
   },
   {
     "GPCODE": 111806,
@@ -1058,12 +734,8 @@
     "BLOCK": "Dhanbad",
     "DISTRICT": "Dhanbad",
     "ELEVATION": 217,
-    "SLOPE": 3.8401427,
-    "LANDCOVER": 12,
-    "LANDCOVER_VALID": true,
-    "HAS_STATIC_MISMATCH": false,
-    "MISMATCHED_FIELDS_NEEDS_MANUAL_REVIEW": "",
-    "MISSING_STATIC_FIELDS": ""
+    "SLOPE": 3.840143,
+    "LANDCOVER": 12
   },
   {
     "GPCODE": 111807,
@@ -1071,12 +743,8 @@
     "BLOCK": "Dhanbad",
     "DISTRICT": "Dhanbad",
     "ELEVATION": 185,
-    "SLOPE": 3.1743898,
-    "LANDCOVER": 12,
-    "LANDCOVER_VALID": true,
-    "HAS_STATIC_MISMATCH": false,
-    "MISMATCHED_FIELDS_NEEDS_MANUAL_REVIEW": "",
-    "MISSING_STATIC_FIELDS": ""
+    "SLOPE": 3.17439,
+    "LANDCOVER": 12
   },
   {
     "GPCODE": 111808,
@@ -1085,11 +753,7 @@
     "DISTRICT": "Dhanbad",
     "ELEVATION": 197,
     "SLOPE": 1.373408,
-    "LANDCOVER": 13,
-    "LANDCOVER_VALID": true,
-    "HAS_STATIC_MISMATCH": false,
-    "MISMATCHED_FIELDS_NEEDS_MANUAL_REVIEW": "",
-    "MISSING_STATIC_FIELDS": ""
+    "LANDCOVER": 13
   },
   {
     "GPCODE": 111809,
@@ -1097,12 +761,8 @@
     "BLOCK": "Dhanbad",
     "DISTRICT": "Dhanbad",
     "ELEVATION": 198,
-    "SLOPE": 1.0133369,
-    "LANDCOVER": 13,
-    "LANDCOVER_VALID": true,
-    "HAS_STATIC_MISMATCH": false,
-    "MISMATCHED_FIELDS_NEEDS_MANUAL_REVIEW": "",
-    "MISSING_STATIC_FIELDS": ""
+    "SLOPE": 1.013337,
+    "LANDCOVER": 13
   },
   {
     "GPCODE": 111810,
@@ -1111,11 +771,7 @@
     "DISTRICT": "Dhanbad",
     "ELEVATION": 193,
     "SLOPE": 3.840107,
-    "LANDCOVER": 12,
-    "LANDCOVER_VALID": true,
-    "HAS_STATIC_MISMATCH": false,
-    "MISMATCHED_FIELDS_NEEDS_MANUAL_REVIEW": "",
-    "MISSING_STATIC_FIELDS": ""
+    "LANDCOVER": 12
   },
   {
     "GPCODE": 111811,
@@ -1123,12 +779,8 @@
     "BLOCK": "Dhanbad",
     "DISTRICT": "Dhanbad",
     "ELEVATION": 193,
-    "SLOPE": 5.7606425,
-    "LANDCOVER": 12,
-    "LANDCOVER_VALID": true,
-    "HAS_STATIC_MISMATCH": false,
-    "MISMATCHED_FIELDS_NEEDS_MANUAL_REVIEW": "",
-    "MISSING_STATIC_FIELDS": ""
+    "SLOPE": 5.760642,
+    "LANDCOVER": 12
   },
   {
     "GPCODE": 111812,
@@ -1136,12 +788,8 @@
     "BLOCK": "Dhanbad",
     "DISTRICT": "Dhanbad",
     "ELEVATION": 201,
-    "SLOPE": 2.7802885,
-    "LANDCOVER": 13,
-    "LANDCOVER_VALID": true,
-    "HAS_STATIC_MISMATCH": false,
-    "MISMATCHED_FIELDS_NEEDS_MANUAL_REVIEW": "",
-    "MISSING_STATIC_FIELDS": ""
+    "SLOPE": 2.780288,
+    "LANDCOVER": 13
   },
   {
     "GPCODE": 111813,
@@ -1149,12 +797,8 @@
     "BLOCK": "Govindpur",
     "DISTRICT": "Dhanbad",
     "ELEVATION": 226,
-    "SLOPE": 3.8402662,
-    "LANDCOVER": 12,
-    "LANDCOVER_VALID": true,
-    "HAS_STATIC_MISMATCH": false,
-    "MISMATCHED_FIELDS_NEEDS_MANUAL_REVIEW": "",
-    "MISSING_STATIC_FIELDS": ""
+    "SLOPE": 3.840266,
+    "LANDCOVER": 12
   },
   {
     "GPCODE": 111814,
@@ -1162,12 +806,8 @@
     "BLOCK": "Govindpur",
     "DISTRICT": "Dhanbad",
     "ELEVATION": 230,
-    "SLOPE": 2.7468846,
-    "LANDCOVER": 12,
-    "LANDCOVER_VALID": true,
-    "HAS_STATIC_MISMATCH": false,
-    "MISMATCHED_FIELDS_NEEDS_MANUAL_REVIEW": "",
-    "MISSING_STATIC_FIELDS": ""
+    "SLOPE": 2.746885,
+    "LANDCOVER": 12
   },
   {
     "GPCODE": 111815,
@@ -1176,11 +816,7 @@
     "DISTRICT": "Dhanbad",
     "ELEVATION": 226,
     "SLOPE": 6.33607,
-    "LANDCOVER": 12,
-    "LANDCOVER_VALID": true,
-    "HAS_STATIC_MISMATCH": false,
-    "MISMATCHED_FIELDS_NEEDS_MANUAL_REVIEW": "",
-    "MISSING_STATIC_FIELDS": ""
+    "LANDCOVER": 12
   },
   {
     "GPCODE": 111816,
@@ -1188,12 +824,8 @@
     "BLOCK": "Govindpur",
     "DISTRICT": "Dhanbad",
     "ELEVATION": 203,
-    "SLOPE": 2.7459948,
-    "LANDCOVER": 12,
-    "LANDCOVER_VALID": true,
-    "HAS_STATIC_MISMATCH": false,
-    "MISMATCHED_FIELDS_NEEDS_MANUAL_REVIEW": "",
-    "MISSING_STATIC_FIELDS": ""
+    "SLOPE": 2.745995,
+    "LANDCOVER": 12
   },
   {
     "GPCODE": 111817,
@@ -1202,11 +834,7 @@
     "DISTRICT": "Dhanbad",
     "ELEVATION": 215,
     "SLOPE": 6.136929,
-    "LANDCOVER": 12,
-    "LANDCOVER_VALID": true,
-    "HAS_STATIC_MISMATCH": false,
-    "MISMATCHED_FIELDS_NEEDS_MANUAL_REVIEW": "",
-    "MISSING_STATIC_FIELDS": ""
+    "LANDCOVER": 12
   },
   {
     "GPCODE": 111818,
@@ -1214,12 +842,8 @@
     "BLOCK": "Govindpur",
     "DISTRICT": "Dhanbad",
     "ELEVATION": 268,
-    "SLOPE": 4.2204123,
-    "LANDCOVER": 12,
-    "LANDCOVER_VALID": true,
-    "HAS_STATIC_MISMATCH": false,
-    "MISMATCHED_FIELDS_NEEDS_MANUAL_REVIEW": "",
-    "MISSING_STATIC_FIELDS": ""
+    "SLOPE": 4.220412,
+    "LANDCOVER": 12
   },
   {
     "GPCODE": 111819,
@@ -1227,12 +851,8 @@
     "BLOCK": "Govindpur",
     "DISTRICT": "Dhanbad",
     "ELEVATION": 203,
-    "SLOPE": 1.0140808,
-    "LANDCOVER": 12,
-    "LANDCOVER_VALID": true,
-    "HAS_STATIC_MISMATCH": false,
-    "MISMATCHED_FIELDS_NEEDS_MANUAL_REVIEW": "",
-    "MISSING_STATIC_FIELDS": ""
+    "SLOPE": 1.014081,
+    "LANDCOVER": 12
   },
   {
     "GPCODE": 111820,
@@ -1241,11 +861,7 @@
     "DISTRICT": "Dhanbad",
     "ELEVATION": 160,
     "SLOPE": 10.452005,
-    "LANDCOVER": 12,
-    "LANDCOVER_VALID": true,
-    "HAS_STATIC_MISMATCH": false,
-    "MISMATCHED_FIELDS_NEEDS_MANUAL_REVIEW": "",
-    "MISSING_STATIC_FIELDS": ""
+    "LANDCOVER": 12
   },
   {
     "GPCODE": 111821,
@@ -1254,11 +870,7 @@
     "DISTRICT": "Dhanbad",
     "ELEVATION": 213,
     "SLOPE": 4.153841,
-    "LANDCOVER": 12,
-    "LANDCOVER_VALID": true,
-    "HAS_STATIC_MISMATCH": false,
-    "MISMATCHED_FIELDS_NEEDS_MANUAL_REVIEW": "",
-    "MISSING_STATIC_FIELDS": ""
+    "LANDCOVER": 12
   },
   {
     "GPCODE": 111822,
@@ -1266,12 +878,8 @@
     "BLOCK": "Govindpur",
     "DISTRICT": "Dhanbad",
     "ELEVATION": 258,
-    "SLOPE": 0.92740995,
-    "LANDCOVER": 12,
-    "LANDCOVER_VALID": true,
-    "HAS_STATIC_MISMATCH": false,
-    "MISMATCHED_FIELDS_NEEDS_MANUAL_REVIEW": "",
-    "MISSING_STATIC_FIELDS": ""
+    "SLOPE": 0.92741,
+    "LANDCOVER": 12
   },
   {
     "GPCODE": 111823,
@@ -1280,11 +888,7 @@
     "DISTRICT": "Dhanbad",
     "ELEVATION": 247,
     "SLOPE": 2.113115,
-    "LANDCOVER": 12,
-    "LANDCOVER_VALID": true,
-    "HAS_STATIC_MISMATCH": false,
-    "MISMATCHED_FIELDS_NEEDS_MANUAL_REVIEW": "",
-    "MISSING_STATIC_FIELDS": ""
+    "LANDCOVER": 12
   },
   {
     "GPCODE": 111824,
@@ -1292,12 +896,8 @@
     "BLOCK": "Govindpur",
     "DISTRICT": "Dhanbad",
     "ELEVATION": 189,
-    "SLOPE": 3.4387224,
-    "LANDCOVER": 12,
-    "LANDCOVER_VALID": true,
-    "HAS_STATIC_MISMATCH": false,
-    "MISMATCHED_FIELDS_NEEDS_MANUAL_REVIEW": "",
-    "MISSING_STATIC_FIELDS": ""
+    "SLOPE": 3.438722,
+    "LANDCOVER": 12
   },
   {
     "GPCODE": 111825,
@@ -1305,12 +905,8 @@
     "BLOCK": "Govindpur",
     "DISTRICT": "Dhanbad",
     "ELEVATION": 204,
-    "SLOPE": 2.1129227,
-    "LANDCOVER": 12,
-    "LANDCOVER_VALID": true,
-    "HAS_STATIC_MISMATCH": false,
-    "MISMATCHED_FIELDS_NEEDS_MANUAL_REVIEW": "",
-    "MISSING_STATIC_FIELDS": ""
+    "SLOPE": 2.112923,
+    "LANDCOVER": 12
   },
   {
     "GPCODE": 111826,
@@ -1318,12 +914,8 @@
     "BLOCK": "Govindpur",
     "DISTRICT": "Dhanbad",
     "ELEVATION": 199,
-    "SLOPE": 2.0271533,
-    "LANDCOVER": 12,
-    "LANDCOVER_VALID": true,
-    "HAS_STATIC_MISMATCH": false,
-    "MISMATCHED_FIELDS_NEEDS_MANUAL_REVIEW": "",
-    "MISSING_STATIC_FIELDS": ""
+    "SLOPE": 2.027153,
+    "LANDCOVER": 12
   },
   {
     "GPCODE": 111828,
@@ -1332,11 +924,7 @@
     "DISTRICT": "Dhanbad",
     "ELEVATION": 219,
     "SLOPE": 2.229732,
-    "LANDCOVER": 12,
-    "LANDCOVER_VALID": true,
-    "HAS_STATIC_MISMATCH": false,
-    "MISMATCHED_FIELDS_NEEDS_MANUAL_REVIEW": "",
-    "MISSING_STATIC_FIELDS": ""
+    "LANDCOVER": 12
   },
   {
     "GPCODE": 111829,
@@ -1344,12 +932,8 @@
     "BLOCK": "Govindpur",
     "DISTRICT": "Dhanbad",
     "ELEVATION": 195,
-    "SLOPE": 6.5425453,
-    "LANDCOVER": 12,
-    "LANDCOVER_VALID": true,
-    "HAS_STATIC_MISMATCH": false,
-    "MISMATCHED_FIELDS_NEEDS_MANUAL_REVIEW": "",
-    "MISSING_STATIC_FIELDS": ""
+    "SLOPE": 6.542545,
+    "LANDCOVER": 12
   },
   {
     "GPCODE": 111830,
@@ -1357,12 +941,8 @@
     "BLOCK": "Govindpur",
     "DISTRICT": "Dhanbad",
     "ELEVATION": 227,
-    "SLOPE": 2.2293563,
-    "LANDCOVER": 12,
-    "LANDCOVER_VALID": true,
-    "HAS_STATIC_MISMATCH": false,
-    "MISMATCHED_FIELDS_NEEDS_MANUAL_REVIEW": "",
-    "MISSING_STATIC_FIELDS": ""
+    "SLOPE": 2.229356,
+    "LANDCOVER": 12
   },
   {
     "GPCODE": 111831,
@@ -1370,12 +950,8 @@
     "BLOCK": "Govindpur",
     "DISTRICT": "Dhanbad",
     "ELEVATION": 225,
-    "SLOPE": 4.1532845,
-    "LANDCOVER": 12,
-    "LANDCOVER_VALID": true,
-    "HAS_STATIC_MISMATCH": false,
-    "MISMATCHED_FIELDS_NEEDS_MANUAL_REVIEW": "",
-    "MISSING_STATIC_FIELDS": ""
+    "SLOPE": 4.153284,
+    "LANDCOVER": 12
   },
   {
     "GPCODE": 111832,
@@ -1384,11 +960,7 @@
     "DISTRICT": "Dhanbad",
     "ELEVATION": 171,
     "SLOPE": 4.11524,
-    "LANDCOVER": 12,
-    "LANDCOVER_VALID": true,
-    "HAS_STATIC_MISMATCH": false,
-    "MISMATCHED_FIELDS_NEEDS_MANUAL_REVIEW": "",
-    "MISSING_STATIC_FIELDS": ""
+    "LANDCOVER": 12
   },
   {
     "GPCODE": 111833,
@@ -1396,12 +968,8 @@
     "BLOCK": "Govindpur",
     "DISTRICT": "Dhanbad",
     "ELEVATION": 221,
-    "SLOPE": 3.7047918,
-    "LANDCOVER": 12,
-    "LANDCOVER_VALID": true,
-    "HAS_STATIC_MISMATCH": false,
-    "MISMATCHED_FIELDS_NEEDS_MANUAL_REVIEW": "",
-    "MISSING_STATIC_FIELDS": ""
+    "SLOPE": 3.704792,
+    "LANDCOVER": 12
   },
   {
     "GPCODE": 111834,
@@ -1409,12 +977,8 @@
     "BLOCK": "Govindpur",
     "DISTRICT": "Dhanbad",
     "ELEVATION": 201,
-    "SLOPE": 5.4796734,
-    "LANDCOVER": 12,
-    "LANDCOVER_VALID": true,
-    "HAS_STATIC_MISMATCH": false,
-    "MISMATCHED_FIELDS_NEEDS_MANUAL_REVIEW": "",
-    "MISSING_STATIC_FIELDS": ""
+    "SLOPE": 5.479673,
+    "LANDCOVER": 12
   },
   {
     "GPCODE": 111835,
@@ -1422,12 +986,8 @@
     "BLOCK": "Govindpur",
     "DISTRICT": "Dhanbad",
     "ELEVATION": 235,
-    "SLOPE": 2.1132486,
-    "LANDCOVER": 12,
-    "LANDCOVER_VALID": true,
-    "HAS_STATIC_MISMATCH": false,
-    "MISMATCHED_FIELDS_NEEDS_MANUAL_REVIEW": "",
-    "MISSING_STATIC_FIELDS": ""
+    "SLOPE": 2.113249,
+    "LANDCOVER": 12
   },
   {
     "GPCODE": 111836,
@@ -1435,12 +995,8 @@
     "BLOCK": "Govindpur",
     "DISTRICT": "Dhanbad",
     "ELEVATION": 246,
-    "SLOPE": 0.92740995,
-    "LANDCOVER": 12,
-    "LANDCOVER_VALID": true,
-    "HAS_STATIC_MISMATCH": false,
-    "MISMATCHED_FIELDS_NEEDS_MANUAL_REVIEW": "",
-    "MISSING_STATIC_FIELDS": ""
+    "SLOPE": 0.92741,
+    "LANDCOVER": 12
   },
   {
     "GPCODE": 111837,
@@ -1449,11 +1005,7 @@
     "DISTRICT": "Dhanbad",
     "ELEVATION": 192,
     "SLOPE": 10.130518,
-    "LANDCOVER": 12,
-    "LANDCOVER_VALID": true,
-    "HAS_STATIC_MISMATCH": false,
-    "MISMATCHED_FIELDS_NEEDS_MANUAL_REVIEW": "",
-    "MISSING_STATIC_FIELDS": ""
+    "LANDCOVER": 12
   },
   {
     "GPCODE": 111838,
@@ -1462,11 +1014,7 @@
     "DISTRICT": "Dhanbad",
     "ELEVATION": 214,
     "SLOPE": 5.528232,
-    "LANDCOVER": 12,
-    "LANDCOVER_VALID": true,
-    "HAS_STATIC_MISMATCH": false,
-    "MISMATCHED_FIELDS_NEEDS_MANUAL_REVIEW": "",
-    "MISSING_STATIC_FIELDS": ""
+    "LANDCOVER": 12
   },
   {
     "GPCODE": 111839,
@@ -1475,11 +1023,7 @@
     "DISTRICT": "Dhanbad",
     "ELEVATION": 243,
     "SLOPE": 1.374396,
-    "LANDCOVER": 12,
-    "LANDCOVER_VALID": true,
-    "HAS_STATIC_MISMATCH": false,
-    "MISMATCHED_FIELDS_NEEDS_MANUAL_REVIEW": "",
-    "MISSING_STATIC_FIELDS": ""
+    "LANDCOVER": 12
   },
   {
     "GPCODE": 111840,
@@ -1488,11 +1032,7 @@
     "DISTRICT": "Dhanbad",
     "ELEVATION": 188,
     "SLOPE": 5.52907,
-    "LANDCOVER": 12,
-    "LANDCOVER_VALID": true,
-    "HAS_STATIC_MISMATCH": false,
-    "MISMATCHED_FIELDS_NEEDS_MANUAL_REVIEW": "",
-    "MISSING_STATIC_FIELDS": ""
+    "LANDCOVER": 12
   },
   {
     "GPCODE": 111841,
@@ -1500,12 +1040,8 @@
     "BLOCK": "Govindpur",
     "DISTRICT": "Dhanbad",
     "ELEVATION": 202,
-    "SLOPE": 1.3736424,
-    "LANDCOVER": 12,
-    "LANDCOVER_VALID": true,
-    "HAS_STATIC_MISMATCH": false,
-    "MISMATCHED_FIELDS_NEEDS_MANUAL_REVIEW": "",
-    "MISSING_STATIC_FIELDS": ""
+    "SLOPE": 1.373642,
+    "LANDCOVER": 12
   },
   {
     "GPCODE": 111842,
@@ -1514,11 +1050,7 @@
     "DISTRICT": "Dhanbad",
     "ELEVATION": 173,
     "SLOPE": 4.220226,
-    "LANDCOVER": 12,
-    "LANDCOVER_VALID": true,
-    "HAS_STATIC_MISMATCH": false,
-    "MISMATCHED_FIELDS_NEEDS_MANUAL_REVIEW": "",
-    "MISSING_STATIC_FIELDS": ""
+    "LANDCOVER": 12
   },
   {
     "GPCODE": 111843,
@@ -1526,12 +1058,8 @@
     "BLOCK": "Govindpur",
     "DISTRICT": "Dhanbad",
     "ELEVATION": 239,
-    "SLOPE": 4.4525414,
-    "LANDCOVER": 12,
-    "LANDCOVER_VALID": true,
-    "HAS_STATIC_MISMATCH": false,
-    "MISMATCHED_FIELDS_NEEDS_MANUAL_REVIEW": "",
-    "MISSING_STATIC_FIELDS": ""
+    "SLOPE": 4.452541,
+    "LANDCOVER": 12
   },
   {
     "GPCODE": 111844,
@@ -1539,12 +1067,8 @@
     "BLOCK": "Govindpur",
     "DISTRICT": "Dhanbad",
     "ELEVATION": 210,
-    "SLOPE": 3.4391403,
-    "LANDCOVER": 12,
-    "LANDCOVER_VALID": true,
-    "HAS_STATIC_MISMATCH": false,
-    "MISMATCHED_FIELDS_NEEDS_MANUAL_REVIEW": "",
-    "MISSING_STATIC_FIELDS": ""
+    "SLOPE": 3.43914,
+    "LANDCOVER": 12
   },
   {
     "GPCODE": 111845,
@@ -1553,11 +1077,7 @@
     "DISTRICT": "Dhanbad",
     "ELEVATION": 168,
     "SLOPE": 9.2,
-    "LANDCOVER": 12,
-    "LANDCOVER_VALID": true,
-    "HAS_STATIC_MISMATCH": false,
-    "MISMATCHED_FIELDS_NEEDS_MANUAL_REVIEW": "",
-    "MISSING_STATIC_FIELDS": ""
+    "LANDCOVER": 12
   },
   {
     "GPCODE": 111846,
@@ -1566,11 +1086,7 @@
     "DISTRICT": "Dhanbad",
     "ELEVATION": 202,
     "SLOPE": 3.439084,
-    "LANDCOVER": 12,
-    "LANDCOVER_VALID": true,
-    "HAS_STATIC_MISMATCH": false,
-    "MISMATCHED_FIELDS_NEEDS_MANUAL_REVIEW": "",
-    "MISSING_STATIC_FIELDS": ""
+    "LANDCOVER": 12
   },
   {
     "GPCODE": 111847,
@@ -1578,12 +1094,8 @@
     "BLOCK": "Govindpur",
     "DISTRICT": "Dhanbad",
     "ELEVATION": 197,
-    "SLOPE": 2.7463145,
-    "LANDCOVER": 12,
-    "LANDCOVER_VALID": true,
-    "HAS_STATIC_MISMATCH": false,
-    "MISMATCHED_FIELDS_NEEDS_MANUAL_REVIEW": "",
-    "MISSING_STATIC_FIELDS": ""
+    "SLOPE": 2.746314,
+    "LANDCOVER": 12
   },
   {
     "GPCODE": 111848,
@@ -1592,11 +1104,7 @@
     "DISTRICT": "Dhanbad",
     "ELEVATION": 200,
     "SLOPE": 4.22063,
-    "LANDCOVER": 12,
-    "LANDCOVER_VALID": true,
-    "HAS_STATIC_MISMATCH": false,
-    "MISMATCHED_FIELDS_NEEDS_MANUAL_REVIEW": "",
-    "MISSING_STATIC_FIELDS": ""
+    "LANDCOVER": 12
   },
   {
     "GPCODE": 111849,
@@ -1605,11 +1113,7 @@
     "DISTRICT": "Dhanbad",
     "ELEVATION": 306,
     "SLOPE": 6.139105,
-    "LANDCOVER": 12,
-    "LANDCOVER_VALID": true,
-    "HAS_STATIC_MISMATCH": false,
-    "MISMATCHED_FIELDS_NEEDS_MANUAL_REVIEW": "",
-    "MISSING_STATIC_FIELDS": ""
+    "LANDCOVER": 12
   },
   {
     "GPCODE": 111850,
@@ -1618,11 +1122,7 @@
     "DISTRICT": "Dhanbad",
     "ELEVATION": 187,
     "SLOPE": 1.373988,
-    "LANDCOVER": 12,
-    "LANDCOVER_VALID": true,
-    "HAS_STATIC_MISMATCH": false,
-    "MISMATCHED_FIELDS_NEEDS_MANUAL_REVIEW": "",
-    "MISSING_STATIC_FIELDS": ""
+    "LANDCOVER": 12
   },
   {
     "GPCODE": 111851,
@@ -1630,12 +1130,8 @@
     "BLOCK": "Govindpur",
     "DISTRICT": "Dhanbad",
     "ELEVATION": 259,
-    "SLOPE": 4.4515896,
-    "LANDCOVER": 12,
-    "LANDCOVER_VALID": true,
-    "HAS_STATIC_MISMATCH": false,
-    "MISMATCHED_FIELDS_NEEDS_MANUAL_REVIEW": "",
-    "MISSING_STATIC_FIELDS": ""
+    "SLOPE": 4.45159,
+    "LANDCOVER": 12
   },
   {
     "GPCODE": 111915,
@@ -1643,12 +1139,8 @@
     "BLOCK": "Egarkund",
     "DISTRICT": "Dhanbad",
     "ELEVATION": 140,
-    "SLOPE": 2.7802885,
-    "LANDCOVER": 13,
-    "LANDCOVER_VALID": true,
-    "HAS_STATIC_MISMATCH": false,
-    "MISMATCHED_FIELDS_NEEDS_MANUAL_REVIEW": "",
-    "MISSING_STATIC_FIELDS": ""
+    "SLOPE": 2.780288,
+    "LANDCOVER": 13
   },
   {
     "GPCODE": 111917,
@@ -1657,11 +1149,7 @@
     "DISTRICT": "Dhanbad",
     "ELEVATION": 188,
     "SLOPE": 4.219788,
-    "LANDCOVER": 12,
-    "LANDCOVER_VALID": true,
-    "HAS_STATIC_MISMATCH": false,
-    "MISMATCHED_FIELDS_NEEDS_MANUAL_REVIEW": "",
-    "MISSING_STATIC_FIELDS": ""
+    "LANDCOVER": 12
   },
   {
     "GPCODE": 111919,
@@ -1669,12 +1157,8 @@
     "BLOCK": "Kaliasol",
     "DISTRICT": "Dhanbad",
     "ELEVATION": 165,
-    "SLOPE": 3.1741676,
-    "LANDCOVER": 12,
-    "LANDCOVER_VALID": true,
-    "HAS_STATIC_MISMATCH": false,
-    "MISMATCHED_FIELDS_NEEDS_MANUAL_REVIEW": "",
-    "MISSING_STATIC_FIELDS": ""
+    "SLOPE": 3.174168,
+    "LANDCOVER": 12
   },
   {
     "GPCODE": 111920,
@@ -1682,12 +1166,8 @@
     "BLOCK": "Kaliasol",
     "DISTRICT": "Dhanbad",
     "ELEVATION": 163,
-    "SLOPE": 1.3731439,
-    "LANDCOVER": 12,
-    "LANDCOVER_VALID": true,
-    "HAS_STATIC_MISMATCH": false,
-    "MISMATCHED_FIELDS_NEEDS_MANUAL_REVIEW": "",
-    "MISSING_STATIC_FIELDS": ""
+    "SLOPE": 1.373144,
+    "LANDCOVER": 12
   },
   {
     "GPCODE": 111921,
@@ -1696,11 +1176,7 @@
     "DISTRICT": "Dhanbad",
     "ELEVATION": 153,
     "SLOPE": 8.2891,
-    "LANDCOVER": 13,
-    "LANDCOVER_VALID": true,
-    "HAS_STATIC_MISMATCH": false,
-    "MISMATCHED_FIELDS_NEEDS_MANUAL_REVIEW": "",
-    "MISSING_STATIC_FIELDS": ""
+    "LANDCOVER": 13
   },
   {
     "GPCODE": 111922,
@@ -1709,11 +1185,7 @@
     "DISTRICT": "Dhanbad",
     "ELEVATION": 139,
     "SLOPE": 2.958518,
-    "LANDCOVER": 12,
-    "LANDCOVER_VALID": true,
-    "HAS_STATIC_MISMATCH": false,
-    "MISMATCHED_FIELDS_NEEDS_MANUAL_REVIEW": "",
-    "MISSING_STATIC_FIELDS": ""
+    "LANDCOVER": 12
   },
   {
     "GPCODE": 111924,
@@ -1721,12 +1193,8 @@
     "BLOCK": "Kaliasol",
     "DISTRICT": "Dhanbad",
     "ELEVATION": 184,
-    "SLOPE": 1.0132396,
-    "LANDCOVER": 12,
-    "LANDCOVER_VALID": true,
-    "HAS_STATIC_MISMATCH": false,
-    "MISMATCHED_FIELDS_NEEDS_MANUAL_REVIEW": "",
-    "MISSING_STATIC_FIELDS": ""
+    "SLOPE": 1.01324,
+    "LANDCOVER": 12
   },
   {
     "GPCODE": 111925,
@@ -1734,12 +1202,8 @@
     "BLOCK": "Nirsa",
     "DISTRICT": "Dhanbad",
     "ELEVATION": 170,
-    "SLOPE": 2.7802885,
-    "LANDCOVER": 12,
-    "LANDCOVER_VALID": true,
-    "HAS_STATIC_MISMATCH": false,
-    "MISMATCHED_FIELDS_NEEDS_MANUAL_REVIEW": "",
-    "MISSING_STATIC_FIELDS": ""
+    "SLOPE": 2.780288,
+    "LANDCOVER": 12
   },
   {
     "GPCODE": 111926,
@@ -1747,12 +1211,8 @@
     "BLOCK": "Kaliasol",
     "DISTRICT": "Dhanbad",
     "ELEVATION": 136,
-    "SLOPE": 4.9050393,
-    "LANDCOVER": 12,
-    "LANDCOVER_VALID": true,
-    "HAS_STATIC_MISMATCH": false,
-    "MISMATCHED_FIELDS_NEEDS_MANUAL_REVIEW": "",
-    "MISSING_STATIC_FIELDS": ""
+    "SLOPE": 4.905039,
+    "LANDCOVER": 12
   },
   {
     "GPCODE": 111927,
@@ -1761,11 +1221,7 @@
     "DISTRICT": "Dhanbad",
     "ELEVATION": 178,
     "SLOPE": 2.113236,
-    "LANDCOVER": 12,
-    "LANDCOVER_VALID": true,
-    "HAS_STATIC_MISMATCH": false,
-    "MISMATCHED_FIELDS_NEEDS_MANUAL_REVIEW": "",
-    "MISSING_STATIC_FIELDS": ""
+    "LANDCOVER": 12
   },
   {
     "GPCODE": 111928,
@@ -1774,11 +1230,7 @@
     "DISTRICT": "Dhanbad",
     "ELEVATION": 148,
     "SLOPE": 0.0,
-    "LANDCOVER": 10,
-    "LANDCOVER_VALID": true,
-    "HAS_STATIC_MISMATCH": false,
-    "MISMATCHED_FIELDS_NEEDS_MANUAL_REVIEW": "",
-    "MISSING_STATIC_FIELDS": ""
+    "LANDCOVER": 10
   },
   {
     "GPCODE": 111929,
@@ -1786,12 +1238,8 @@
     "BLOCK": "Nirsa",
     "DISTRICT": "Dhanbad",
     "ELEVATION": 141,
-    "SLOPE": 2.7802885,
-    "LANDCOVER": 13,
-    "LANDCOVER_VALID": true,
-    "HAS_STATIC_MISMATCH": false,
-    "MISMATCHED_FIELDS_NEEDS_MANUAL_REVIEW": "",
-    "MISSING_STATIC_FIELDS": ""
+    "SLOPE": 2.780288,
+    "LANDCOVER": 13
   },
   {
     "GPCODE": 111930,
@@ -1799,12 +1247,8 @@
     "BLOCK": "Kaliasol",
     "DISTRICT": "Dhanbad",
     "ELEVATION": 138,
-    "SLOPE": 0.92740995,
-    "LANDCOVER": 12,
-    "LANDCOVER_VALID": true,
-    "HAS_STATIC_MISMATCH": false,
-    "MISMATCHED_FIELDS_NEEDS_MANUAL_REVIEW": "",
-    "MISSING_STATIC_FIELDS": ""
+    "SLOPE": 0.92741,
+    "LANDCOVER": 12
   },
   {
     "GPCODE": 111931,
@@ -1812,12 +1256,8 @@
     "BLOCK": "Nirsa",
     "DISTRICT": "Dhanbad",
     "ELEVATION": 144,
-    "SLOPE": 2.7456152,
-    "LANDCOVER": 12,
-    "LANDCOVER_VALID": true,
-    "HAS_STATIC_MISMATCH": false,
-    "MISMATCHED_FIELDS_NEEDS_MANUAL_REVIEW": "",
-    "MISSING_STATIC_FIELDS": ""
+    "SLOPE": 2.745615,
+    "LANDCOVER": 12
   },
   {
     "GPCODE": 111932,
@@ -1825,12 +1265,8 @@
     "BLOCK": "Egarkund",
     "DISTRICT": "Dhanbad",
     "ELEVATION": 139,
-    "SLOPE": 1.3734765,
-    "LANDCOVER": 12,
-    "LANDCOVER_VALID": true,
-    "HAS_STATIC_MISMATCH": false,
-    "MISMATCHED_FIELDS_NEEDS_MANUAL_REVIEW": "",
-    "MISSING_STATIC_FIELDS": ""
+    "SLOPE": 1.373476,
+    "LANDCOVER": 12
   },
   {
     "GPCODE": 111933,
@@ -1838,12 +1274,8 @@
     "BLOCK": "Egarkund",
     "DISTRICT": "Dhanbad",
     "ELEVATION": 110,
-    "SLOPE": 2.9585233,
-    "LANDCOVER": 12,
-    "LANDCOVER_VALID": true,
-    "HAS_STATIC_MISMATCH": false,
-    "MISMATCHED_FIELDS_NEEDS_MANUAL_REVIEW": "",
-    "MISSING_STATIC_FIELDS": ""
+    "SLOPE": 2.958523,
+    "LANDCOVER": 12
   },
   {
     "GPCODE": 111934,
@@ -1852,11 +1284,7 @@
     "DISTRICT": "Dhanbad",
     "ELEVATION": 148,
     "SLOPE": 2.025846,
-    "LANDCOVER": 12,
-    "LANDCOVER_VALID": true,
-    "HAS_STATIC_MISMATCH": false,
-    "MISMATCHED_FIELDS_NEEDS_MANUAL_REVIEW": "",
-    "MISSING_STATIC_FIELDS": ""
+    "LANDCOVER": 12
   },
   {
     "GPCODE": 111935,
@@ -1864,12 +1292,8 @@
     "BLOCK": "Kaliasol",
     "DISTRICT": "Dhanbad",
     "ELEVATION": 144,
-    "SLOPE": 4.1133585,
-    "LANDCOVER": 12,
-    "LANDCOVER_VALID": true,
-    "HAS_STATIC_MISMATCH": false,
-    "MISMATCHED_FIELDS_NEEDS_MANUAL_REVIEW": "",
-    "MISSING_STATIC_FIELDS": ""
+    "SLOPE": 4.113359,
+    "LANDCOVER": 12
   },
   {
     "GPCODE": 111936,
@@ -1877,12 +1301,8 @@
     "BLOCK": "Kaliasol",
     "DISTRICT": "Dhanbad",
     "ELEVATION": 135,
-    "SLOPE": 1.8543341,
-    "LANDCOVER": 12,
-    "LANDCOVER_VALID": true,
-    "HAS_STATIC_MISMATCH": false,
-    "MISMATCHED_FIELDS_NEEDS_MANUAL_REVIEW": "",
-    "MISSING_STATIC_FIELDS": ""
+    "SLOPE": 1.854334,
+    "LANDCOVER": 12
   },
   {
     "GPCODE": 111937,
@@ -1890,12 +1310,8 @@
     "BLOCK": "Egarkund",
     "DISTRICT": "Dhanbad",
     "ELEVATION": 103,
-    "SLOPE": 2.9585202,
-    "LANDCOVER": 12,
-    "LANDCOVER_VALID": true,
-    "HAS_STATIC_MISMATCH": false,
-    "MISMATCHED_FIELDS_NEEDS_MANUAL_REVIEW": "",
-    "MISSING_STATIC_FIELDS": ""
+    "SLOPE": 2.95852,
+    "LANDCOVER": 12
   },
   {
     "GPCODE": 111939,
@@ -1903,12 +1319,8 @@
     "BLOCK": "Nirsa",
     "DISTRICT": "Dhanbad",
     "ELEVATION": 187,
-    "SLOPE": 3.5583882,
-    "LANDCOVER": 12,
-    "LANDCOVER_VALID": true,
-    "HAS_STATIC_MISMATCH": false,
-    "MISMATCHED_FIELDS_NEEDS_MANUAL_REVIEW": "",
-    "MISSING_STATIC_FIELDS": ""
+    "SLOPE": 3.558388,
+    "LANDCOVER": 12
   },
   {
     "GPCODE": 111940,
@@ -1916,12 +1328,8 @@
     "BLOCK": "Egarkund",
     "DISTRICT": "Dhanbad",
     "ELEVATION": 144,
-    "SLOPE": 2.9586537,
-    "LANDCOVER": 12,
-    "LANDCOVER_VALID": true,
-    "HAS_STATIC_MISMATCH": false,
-    "MISMATCHED_FIELDS_NEEDS_MANUAL_REVIEW": "",
-    "MISSING_STATIC_FIELDS": ""
+    "SLOPE": 2.958654,
+    "LANDCOVER": 12
   },
   {
     "GPCODE": 111941,
@@ -1929,12 +1337,8 @@
     "BLOCK": "Egarkund",
     "DISTRICT": "Dhanbad",
     "ELEVATION": 130,
-    "SLOPE": 3.1748965,
-    "LANDCOVER": 12,
-    "LANDCOVER_VALID": true,
-    "HAS_STATIC_MISMATCH": false,
-    "MISMATCHED_FIELDS_NEEDS_MANUAL_REVIEW": "",
-    "MISSING_STATIC_FIELDS": ""
+    "SLOPE": 3.174896,
+    "LANDCOVER": 12
   },
   {
     "GPCODE": 111942,
@@ -1942,12 +1346,8 @@
     "BLOCK": "Nirsa",
     "DISTRICT": "Dhanbad",
     "ELEVATION": 146,
-    "SLOPE": 3.7047918,
-    "LANDCOVER": 12,
-    "LANDCOVER_VALID": true,
-    "HAS_STATIC_MISMATCH": false,
-    "MISMATCHED_FIELDS_NEEDS_MANUAL_REVIEW": "",
-    "MISSING_STATIC_FIELDS": ""
+    "SLOPE": 3.704792,
+    "LANDCOVER": 12
   },
   {
     "GPCODE": 111943,
@@ -1955,12 +1355,8 @@
     "BLOCK": "Kaliasol",
     "DISTRICT": "Dhanbad",
     "ELEVATION": 134,
-    "SLOPE": 3.1745875,
-    "LANDCOVER": 12,
-    "LANDCOVER_VALID": true,
-    "HAS_STATIC_MISMATCH": false,
-    "MISMATCHED_FIELDS_NEEDS_MANUAL_REVIEW": "",
-    "MISSING_STATIC_FIELDS": ""
+    "SLOPE": 3.174588,
+    "LANDCOVER": 12
   },
   {
     "GPCODE": 111944,
@@ -1969,11 +1365,7 @@
     "DISTRICT": "Dhanbad",
     "ELEVATION": 197,
     "SLOPE": 1.373585,
-    "LANDCOVER": 12,
-    "LANDCOVER_VALID": true,
-    "HAS_STATIC_MISMATCH": false,
-    "MISMATCHED_FIELDS_NEEDS_MANUAL_REVIEW": "",
-    "MISSING_STATIC_FIELDS": ""
+    "LANDCOVER": 12
   },
   {
     "GPCODE": 111945,
@@ -1982,11 +1374,7 @@
     "DISTRICT": "Dhanbad",
     "ELEVATION": 123,
     "SLOPE": 0.0,
-    "LANDCOVER": 13,
-    "LANDCOVER_VALID": true,
-    "HAS_STATIC_MISMATCH": false,
-    "MISMATCHED_FIELDS_NEEDS_MANUAL_REVIEW": "",
-    "MISSING_STATIC_FIELDS": ""
+    "LANDCOVER": 13
   },
   {
     "GPCODE": 111946,
@@ -1994,12 +1382,8 @@
     "BLOCK": "Kaliasol",
     "DISTRICT": "Dhanbad",
     "ELEVATION": 176,
-    "SLOPE": 2.1127353,
-    "LANDCOVER": 12,
-    "LANDCOVER_VALID": true,
-    "HAS_STATIC_MISMATCH": false,
-    "MISMATCHED_FIELDS_NEEDS_MANUAL_REVIEW": "",
-    "MISSING_STATIC_FIELDS": ""
+    "SLOPE": 2.112735,
+    "LANDCOVER": 12
   },
   {
     "GPCODE": 111947,
@@ -2007,12 +1391,8 @@
     "BLOCK": "Egarkund",
     "DISTRICT": "Dhanbad",
     "ELEVATION": 156,
-    "SLOPE": 2.9586935,
-    "LANDCOVER": 12,
-    "LANDCOVER_VALID": true,
-    "HAS_STATIC_MISMATCH": false,
-    "MISMATCHED_FIELDS_NEEDS_MANUAL_REVIEW": "",
-    "MISSING_STATIC_FIELDS": ""
+    "SLOPE": 2.958694,
+    "LANDCOVER": 12
   },
   {
     "GPCODE": 111948,
@@ -2021,11 +1401,7 @@
     "DISTRICT": "Dhanbad",
     "ELEVATION": 148,
     "SLOPE": 0.0,
-    "LANDCOVER": 10,
-    "LANDCOVER_VALID": true,
-    "HAS_STATIC_MISMATCH": false,
-    "MISMATCHED_FIELDS_NEEDS_MANUAL_REVIEW": "",
-    "MISSING_STATIC_FIELDS": ""
+    "LANDCOVER": 10
   },
   {
     "GPCODE": 111949,
@@ -2033,12 +1409,8 @@
     "BLOCK": "Egarkund",
     "DISTRICT": "Dhanbad",
     "ELEVATION": 131,
-    "SLOPE": 1.3736025,
-    "LANDCOVER": 10,
-    "LANDCOVER_VALID": true,
-    "HAS_STATIC_MISMATCH": false,
-    "MISMATCHED_FIELDS_NEEDS_MANUAL_REVIEW": "",
-    "MISSING_STATIC_FIELDS": ""
+    "SLOPE": 1.373602,
+    "LANDCOVER": 10
   },
   {
     "GPCODE": 111951,
@@ -2046,12 +1418,8 @@
     "BLOCK": "Nirsa",
     "DISTRICT": "Dhanbad",
     "ELEVATION": 145,
-    "SLOPE": 4.0482507,
-    "LANDCOVER": 12,
-    "LANDCOVER_VALID": true,
-    "HAS_STATIC_MISMATCH": false,
-    "MISMATCHED_FIELDS_NEEDS_MANUAL_REVIEW": "",
-    "MISSING_STATIC_FIELDS": ""
+    "SLOPE": 4.048251,
+    "LANDCOVER": 12
   },
   {
     "GPCODE": 111952,
@@ -2059,12 +1427,8 @@
     "BLOCK": "Kaliasol",
     "DISTRICT": "Dhanbad",
     "ELEVATION": 137,
-    "SLOPE": 5.5272565,
-    "LANDCOVER": 12,
-    "LANDCOVER_VALID": true,
-    "HAS_STATIC_MISMATCH": false,
-    "MISMATCHED_FIELDS_NEEDS_MANUAL_REVIEW": "",
-    "MISSING_STATIC_FIELDS": ""
+    "SLOPE": 5.527256,
+    "LANDCOVER": 12
   },
   {
     "GPCODE": 111953,
@@ -2073,11 +1437,7 @@
     "DISTRICT": "Dhanbad",
     "ELEVATION": 167,
     "SLOPE": 8.814079,
-    "LANDCOVER": 10,
-    "LANDCOVER_VALID": true,
-    "HAS_STATIC_MISMATCH": false,
-    "MISMATCHED_FIELDS_NEEDS_MANUAL_REVIEW": "",
-    "MISSING_STATIC_FIELDS": ""
+    "LANDCOVER": 10
   },
   {
     "GPCODE": 111954,
@@ -2085,12 +1445,8 @@
     "BLOCK": "Nirsa",
     "DISTRICT": "Dhanbad",
     "ELEVATION": 157,
-    "SLOPE": 1.3736281,
-    "LANDCOVER": 12,
-    "LANDCOVER_VALID": true,
-    "HAS_STATIC_MISMATCH": false,
-    "MISMATCHED_FIELDS_NEEDS_MANUAL_REVIEW": "",
-    "MISSING_STATIC_FIELDS": ""
+    "SLOPE": 1.373628,
+    "LANDCOVER": 12
   },
   {
     "GPCODE": 111955,
@@ -2099,11 +1455,7 @@
     "DISTRICT": "Dhanbad",
     "ELEVATION": 114,
     "SLOPE": 18.892963,
-    "LANDCOVER": 12,
-    "LANDCOVER_VALID": true,
-    "HAS_STATIC_MISMATCH": false,
-    "MISMATCHED_FIELDS_NEEDS_MANUAL_REVIEW": "",
-    "MISSING_STATIC_FIELDS": ""
+    "LANDCOVER": 12
   },
   {
     "GPCODE": 111956,
@@ -2111,12 +1463,8 @@
     "BLOCK": "Egarkund",
     "DISTRICT": "Dhanbad",
     "ELEVATION": 121,
-    "SLOPE": 0.92740995,
-    "LANDCOVER": 13,
-    "LANDCOVER_VALID": true,
-    "HAS_STATIC_MISMATCH": false,
-    "MISMATCHED_FIELDS_NEEDS_MANUAL_REVIEW": "",
-    "MISSING_STATIC_FIELDS": ""
+    "SLOPE": 0.92741,
+    "LANDCOVER": 13
   },
   {
     "GPCODE": 111957,
@@ -2125,11 +1473,7 @@
     "DISTRICT": "Dhanbad",
     "ELEVATION": 133,
     "SLOPE": 17.721397,
-    "LANDCOVER": 13,
-    "LANDCOVER_VALID": true,
-    "HAS_STATIC_MISMATCH": false,
-    "MISMATCHED_FIELDS_NEEDS_MANUAL_REVIEW": "",
-    "MISSING_STATIC_FIELDS": ""
+    "LANDCOVER": 13
   },
   {
     "GPCODE": 111960,
@@ -2137,12 +1481,8 @@
     "BLOCK": "Nirsa",
     "DISTRICT": "Dhanbad",
     "ELEVATION": 181,
-    "SLOPE": 1.3738183,
-    "LANDCOVER": 12,
-    "LANDCOVER_VALID": true,
-    "HAS_STATIC_MISMATCH": false,
-    "MISMATCHED_FIELDS_NEEDS_MANUAL_REVIEW": "",
-    "MISSING_STATIC_FIELDS": ""
+    "SLOPE": 1.373818,
+    "LANDCOVER": 12
   },
   {
     "GPCODE": 111961,
@@ -2151,11 +1491,7 @@
     "DISTRICT": "Dhanbad",
     "ELEVATION": 122,
     "SLOPE": 3.036858,
-    "LANDCOVER": 13,
-    "LANDCOVER_VALID": true,
-    "HAS_STATIC_MISMATCH": false,
-    "MISMATCHED_FIELDS_NEEDS_MANUAL_REVIEW": "",
-    "MISSING_STATIC_FIELDS": ""
+    "LANDCOVER": 13
   },
   {
     "GPCODE": 111962,
@@ -2163,12 +1499,8 @@
     "BLOCK": "Nirsa",
     "DISTRICT": "Dhanbad",
     "ELEVATION": 152,
-    "SLOPE": 5.1390095,
-    "LANDCOVER": 12,
-    "LANDCOVER_VALID": true,
-    "HAS_STATIC_MISMATCH": false,
-    "MISMATCHED_FIELDS_NEEDS_MANUAL_REVIEW": "",
-    "MISSING_STATIC_FIELDS": ""
+    "SLOPE": 5.13901,
+    "LANDCOVER": 12
   },
   {
     "GPCODE": 111963,
@@ -2177,11 +1509,7 @@
     "DISTRICT": "Dhanbad",
     "ELEVATION": 147,
     "SLOPE": 8.415314,
-    "LANDCOVER": 13,
-    "LANDCOVER_VALID": true,
-    "HAS_STATIC_MISMATCH": false,
-    "MISMATCHED_FIELDS_NEEDS_MANUAL_REVIEW": "",
-    "MISSING_STATIC_FIELDS": ""
+    "LANDCOVER": 13
   },
   {
     "GPCODE": 111965,
@@ -2189,12 +1517,8 @@
     "BLOCK": "Kaliasol",
     "DISTRICT": "Dhanbad",
     "ELEVATION": 171,
-    "SLOPE": 1.3733857,
-    "LANDCOVER": 12,
-    "LANDCOVER_VALID": true,
-    "HAS_STATIC_MISMATCH": false,
-    "MISMATCHED_FIELDS_NEEDS_MANUAL_REVIEW": "",
-    "MISSING_STATIC_FIELDS": ""
+    "SLOPE": 1.373386,
+    "LANDCOVER": 12
   },
   {
     "GPCODE": 111966,
@@ -2202,12 +1526,8 @@
     "BLOCK": "Kaliasol",
     "DISTRICT": "Dhanbad",
     "ELEVATION": 131,
-    "SLOPE": 0.92740995,
-    "LANDCOVER": 12,
-    "LANDCOVER_VALID": true,
-    "HAS_STATIC_MISMATCH": false,
-    "MISMATCHED_FIELDS_NEEDS_MANUAL_REVIEW": "",
-    "MISSING_STATIC_FIELDS": ""
+    "SLOPE": 0.92741,
+    "LANDCOVER": 12
   },
   {
     "GPCODE": 111967,
@@ -2215,12 +1535,8 @@
     "BLOCK": "Kaliasol",
     "DISTRICT": "Dhanbad",
     "ELEVATION": 177,
-    "SLOPE": 2.7452426,
-    "LANDCOVER": 12,
-    "LANDCOVER_VALID": true,
-    "HAS_STATIC_MISMATCH": false,
-    "MISMATCHED_FIELDS_NEEDS_MANUAL_REVIEW": "",
-    "MISSING_STATIC_FIELDS": ""
+    "SLOPE": 2.745243,
+    "LANDCOVER": 12
   },
   {
     "GPCODE": 111968,
@@ -2228,12 +1544,8 @@
     "BLOCK": "Nirsa",
     "DISTRICT": "Dhanbad",
     "ELEVATION": 137,
-    "SLOPE": 1.0135491,
-    "LANDCOVER": 12,
-    "LANDCOVER_VALID": true,
-    "HAS_STATIC_MISMATCH": false,
-    "MISMATCHED_FIELDS_NEEDS_MANUAL_REVIEW": "",
-    "MISSING_STATIC_FIELDS": ""
+    "SLOPE": 1.013549,
+    "LANDCOVER": 12
   },
   {
     "GPCODE": 111969,
@@ -2241,12 +1553,8 @@
     "BLOCK": "Nirsa",
     "DISTRICT": "Dhanbad",
     "ELEVATION": 158,
-    "SLOPE": 2.9587395,
-    "LANDCOVER": 12,
-    "LANDCOVER_VALID": true,
-    "HAS_STATIC_MISMATCH": false,
-    "MISMATCHED_FIELDS_NEEDS_MANUAL_REVIEW": "",
-    "MISSING_STATIC_FIELDS": ""
+    "SLOPE": 2.95874,
+    "LANDCOVER": 12
   },
   {
     "GPCODE": 111970,
@@ -2254,12 +1562,8 @@
     "BLOCK": "Nirsa",
     "DISTRICT": "Dhanbad",
     "ELEVATION": 170,
-    "SLOPE": 1.0139917,
-    "LANDCOVER": 12,
-    "LANDCOVER_VALID": true,
-    "HAS_STATIC_MISMATCH": false,
-    "MISMATCHED_FIELDS_NEEDS_MANUAL_REVIEW": "",
-    "MISSING_STATIC_FIELDS": ""
+    "SLOPE": 1.013992,
+    "LANDCOVER": 12
   },
   {
     "GPCODE": 111971,
@@ -2268,11 +1572,7 @@
     "DISTRICT": "Dhanbad",
     "ELEVATION": 176,
     "SLOPE": 2.958572,
-    "LANDCOVER": 12,
-    "LANDCOVER_VALID": true,
-    "HAS_STATIC_MISMATCH": false,
-    "MISMATCHED_FIELDS_NEEDS_MANUAL_REVIEW": "",
-    "MISSING_STATIC_FIELDS": ""
+    "LANDCOVER": 12
   },
   {
     "GPCODE": 111972,
@@ -2280,12 +1580,8 @@
     "BLOCK": "Nirsa",
     "DISTRICT": "Dhanbad",
     "ELEVATION": 133,
-    "SLOPE": 1.0133542,
-    "LANDCOVER": 12,
-    "LANDCOVER_VALID": true,
-    "HAS_STATIC_MISMATCH": false,
-    "MISMATCHED_FIELDS_NEEDS_MANUAL_REVIEW": "",
-    "MISSING_STATIC_FIELDS": ""
+    "SLOPE": 1.013354,
+    "LANDCOVER": 12
   },
   {
     "GPCODE": 111973,
@@ -2294,11 +1590,7 @@
     "DISTRICT": "Dhanbad",
     "ELEVATION": 150,
     "SLOPE": 5.761224,
-    "LANDCOVER": 12,
-    "LANDCOVER_VALID": true,
-    "HAS_STATIC_MISMATCH": false,
-    "MISMATCHED_FIELDS_NEEDS_MANUAL_REVIEW": "",
-    "MISSING_STATIC_FIELDS": ""
+    "LANDCOVER": 12
   },
   {
     "GPCODE": 111974,
@@ -2306,12 +1598,8 @@
     "BLOCK": "Nirsa",
     "DISTRICT": "Dhanbad",
     "ELEVATION": 168,
-    "SLOPE": 2.2295024,
-    "LANDCOVER": 12,
-    "LANDCOVER_VALID": true,
-    "HAS_STATIC_MISMATCH": false,
-    "MISMATCHED_FIELDS_NEEDS_MANUAL_REVIEW": "",
-    "MISSING_STATIC_FIELDS": ""
+    "SLOPE": 2.229502,
+    "LANDCOVER": 12
   },
   {
     "GPCODE": 111976,
@@ -2319,12 +1607,8 @@
     "BLOCK": "Egarkund",
     "DISTRICT": "Dhanbad",
     "ELEVATION": 135,
-    "SLOPE": 2.1127393,
-    "LANDCOVER": 13,
-    "LANDCOVER_VALID": true,
-    "HAS_STATIC_MISMATCH": false,
-    "MISMATCHED_FIELDS_NEEDS_MANUAL_REVIEW": "",
-    "MISSING_STATIC_FIELDS": ""
+    "SLOPE": 2.112739,
+    "LANDCOVER": 13
   },
   {
     "GPCODE": 111979,
@@ -2332,12 +1616,8 @@
     "BLOCK": "Nirsa",
     "DISTRICT": "Dhanbad",
     "ELEVATION": 160,
-    "SLOPE": 3.7047918,
-    "LANDCOVER": 12,
-    "LANDCOVER_VALID": true,
-    "HAS_STATIC_MISMATCH": false,
-    "MISMATCHED_FIELDS_NEEDS_MANUAL_REVIEW": "",
-    "MISSING_STATIC_FIELDS": ""
+    "SLOPE": 3.704792,
+    "LANDCOVER": 12
   },
   {
     "GPCODE": 111980,
@@ -2346,11 +1626,7 @@
     "DISTRICT": "Dhanbad",
     "ELEVATION": 156,
     "SLOPE": 4.446863,
-    "LANDCOVER": 12,
-    "LANDCOVER_VALID": true,
-    "HAS_STATIC_MISMATCH": false,
-    "MISMATCHED_FIELDS_NEEDS_MANUAL_REVIEW": "",
-    "MISSING_STATIC_FIELDS": ""
+    "LANDCOVER": 12
   },
   {
     "GPCODE": 111981,
@@ -2358,12 +1634,8 @@
     "BLOCK": "Nirsa",
     "DISTRICT": "Dhanbad",
     "ELEVATION": 162,
-    "SLOPE": 2.2287288,
-    "LANDCOVER": 12,
-    "LANDCOVER_VALID": true,
-    "HAS_STATIC_MISMATCH": false,
-    "MISMATCHED_FIELDS_NEEDS_MANUAL_REVIEW": "",
-    "MISSING_STATIC_FIELDS": ""
+    "SLOPE": 2.228729,
+    "LANDCOVER": 12
   },
   {
     "GPCODE": 111982,
@@ -2371,12 +1643,8 @@
     "BLOCK": "Kaliasol",
     "DISTRICT": "Dhanbad",
     "ELEVATION": 148,
-    "SLOPE": 2.7449248,
-    "LANDCOVER": 12,
-    "LANDCOVER_VALID": true,
-    "HAS_STATIC_MISMATCH": false,
-    "MISMATCHED_FIELDS_NEEDS_MANUAL_REVIEW": "",
-    "MISSING_STATIC_FIELDS": ""
+    "SLOPE": 2.744925,
+    "LANDCOVER": 12
   },
   {
     "GPCODE": 111983,
@@ -2384,12 +1652,8 @@
     "BLOCK": "Topchanchi",
     "DISTRICT": "Dhanbad",
     "ELEVATION": 269,
-    "SLOPE": 5.0585866,
-    "LANDCOVER": 12,
-    "LANDCOVER_VALID": true,
-    "HAS_STATIC_MISMATCH": false,
-    "MISMATCHED_FIELDS_NEEDS_MANUAL_REVIEW": "",
-    "MISSING_STATIC_FIELDS": ""
+    "SLOPE": 5.058587,
+    "LANDCOVER": 12
   },
   {
     "GPCODE": 111984,
@@ -2397,12 +1661,8 @@
     "BLOCK": "Topchanchi",
     "DISTRICT": "Dhanbad",
     "ELEVATION": 222,
-    "SLOPE": 0.92740995,
-    "LANDCOVER": 12,
-    "LANDCOVER_VALID": true,
-    "HAS_STATIC_MISMATCH": false,
-    "MISMATCHED_FIELDS_NEEDS_MANUAL_REVIEW": "",
-    "MISSING_STATIC_FIELDS": ""
+    "SLOPE": 0.92741,
+    "LANDCOVER": 12
   },
   {
     "GPCODE": 111985,
@@ -2410,12 +1670,8 @@
     "BLOCK": "Topchanchi",
     "DISTRICT": "Dhanbad",
     "ELEVATION": 250,
-    "SLOPE": 0.92740995,
-    "LANDCOVER": 12,
-    "LANDCOVER_VALID": true,
-    "HAS_STATIC_MISMATCH": false,
-    "MISMATCHED_FIELDS_NEEDS_MANUAL_REVIEW": "",
-    "MISSING_STATIC_FIELDS": ""
+    "SLOPE": 0.92741,
+    "LANDCOVER": 12
   },
   {
     "GPCODE": 111986,
@@ -2423,12 +1679,8 @@
     "BLOCK": "Topchanchi",
     "DISTRICT": "Dhanbad",
     "ELEVATION": 213,
-    "SLOPE": 5.5289426,
-    "LANDCOVER": 12,
-    "LANDCOVER_VALID": true,
-    "HAS_STATIC_MISMATCH": false,
-    "MISMATCHED_FIELDS_NEEDS_MANUAL_REVIEW": "",
-    "MISSING_STATIC_FIELDS": ""
+    "SLOPE": 5.528943,
+    "LANDCOVER": 12
   },
   {
     "GPCODE": 111987,
@@ -2436,12 +1688,8 @@
     "BLOCK": "Topchanchi",
     "DISTRICT": "Dhanbad",
     "ELEVATION": 302,
-    "SLOPE": 1.3743895,
-    "LANDCOVER": 12,
-    "LANDCOVER_VALID": true,
-    "HAS_STATIC_MISMATCH": false,
-    "MISMATCHED_FIELDS_NEEDS_MANUAL_REVIEW": "",
-    "MISSING_STATIC_FIELDS": ""
+    "SLOPE": 1.37439,
+    "LANDCOVER": 12
   },
   {
     "GPCODE": 111988,
@@ -2449,12 +1697,8 @@
     "BLOCK": "Topchanchi",
     "DISTRICT": "Dhanbad",
     "ELEVATION": 240,
-    "SLOPE": 1.0140069,
-    "LANDCOVER": 12,
-    "LANDCOVER_VALID": true,
-    "HAS_STATIC_MISMATCH": false,
-    "MISMATCHED_FIELDS_NEEDS_MANUAL_REVIEW": "",
-    "MISSING_STATIC_FIELDS": ""
+    "SLOPE": 1.014007,
+    "LANDCOVER": 12
   },
   {
     "GPCODE": 111989,
@@ -2463,11 +1707,7 @@
     "DISTRICT": "Dhanbad",
     "ELEVATION": 280,
     "SLOPE": 4.116716,
-    "LANDCOVER": 12,
-    "LANDCOVER_VALID": true,
-    "HAS_STATIC_MISMATCH": false,
-    "MISMATCHED_FIELDS_NEEDS_MANUAL_REVIEW": "",
-    "MISSING_STATIC_FIELDS": ""
+    "LANDCOVER": 12
   },
   {
     "GPCODE": 111990,
@@ -2475,12 +1715,8 @@
     "BLOCK": "Topchanchi",
     "DISTRICT": "Dhanbad",
     "ELEVATION": 238,
-    "SLOPE": 1.3740442,
-    "LANDCOVER": 12,
-    "LANDCOVER_VALID": true,
-    "HAS_STATIC_MISMATCH": false,
-    "MISMATCHED_FIELDS_NEEDS_MANUAL_REVIEW": "",
-    "MISSING_STATIC_FIELDS": ""
+    "SLOPE": 1.374044,
+    "LANDCOVER": 12
   },
   {
     "GPCODE": 111991,
@@ -2488,12 +1724,8 @@
     "BLOCK": "Topchanchi",
     "DISTRICT": "Dhanbad",
     "ELEVATION": 245,
-    "SLOPE": 3.1774204,
-    "LANDCOVER": 12,
-    "LANDCOVER_VALID": true,
-    "HAS_STATIC_MISMATCH": false,
-    "MISMATCHED_FIELDS_NEEDS_MANUAL_REVIEW": "",
-    "MISSING_STATIC_FIELDS": ""
+    "SLOPE": 3.17742,
+    "LANDCOVER": 12
   },
   {
     "GPCODE": 111992,
@@ -2501,12 +1733,8 @@
     "BLOCK": "Topchanchi",
     "DISTRICT": "Dhanbad",
     "ELEVATION": 233,
-    "SLOPE": 4.4518332,
-    "LANDCOVER": 12,
-    "LANDCOVER_VALID": true,
-    "HAS_STATIC_MISMATCH": false,
-    "MISMATCHED_FIELDS_NEEDS_MANUAL_REVIEW": "",
-    "MISSING_STATIC_FIELDS": ""
+    "SLOPE": 4.451833,
+    "LANDCOVER": 12
   },
   {
     "GPCODE": 111994,
@@ -2514,12 +1742,8 @@
     "BLOCK": "Topchanchi",
     "DISTRICT": "Dhanbad",
     "ELEVATION": 245,
-    "SLOPE": 0.92740995,
-    "LANDCOVER": 12,
-    "LANDCOVER_VALID": true,
-    "HAS_STATIC_MISMATCH": false,
-    "MISMATCHED_FIELDS_NEEDS_MANUAL_REVIEW": "",
-    "MISSING_STATIC_FIELDS": ""
+    "SLOPE": 0.92741,
+    "LANDCOVER": 12
   },
   {
     "GPCODE": 111996,
@@ -2528,11 +1752,7 @@
     "DISTRICT": "Dhanbad",
     "ELEVATION": 249,
     "SLOPE": 3.438977,
-    "LANDCOVER": 12,
-    "LANDCOVER_VALID": true,
-    "HAS_STATIC_MISMATCH": false,
-    "MISMATCHED_FIELDS_NEEDS_MANUAL_REVIEW": "",
-    "MISSING_STATIC_FIELDS": ""
+    "LANDCOVER": 12
   },
   {
     "GPCODE": 111998,
@@ -2540,12 +1760,8 @@
     "BLOCK": "Topchanchi",
     "DISTRICT": "Dhanbad",
     "ELEVATION": 241,
-    "SLOPE": 1.3742641,
-    "LANDCOVER": 12,
-    "LANDCOVER_VALID": true,
-    "HAS_STATIC_MISMATCH": false,
-    "MISMATCHED_FIELDS_NEEDS_MANUAL_REVIEW": "",
-    "MISSING_STATIC_FIELDS": ""
+    "SLOPE": 1.374264,
+    "LANDCOVER": 12
   },
   {
     "GPCODE": 111999,
@@ -2554,11 +1770,7 @@
     "DISTRICT": "Dhanbad",
     "ELEVATION": 292,
     "SLOPE": 2.229946,
-    "LANDCOVER": 12,
-    "LANDCOVER_VALID": true,
-    "HAS_STATIC_MISMATCH": false,
-    "MISMATCHED_FIELDS_NEEDS_MANUAL_REVIEW": "",
-    "MISSING_STATIC_FIELDS": ""
+    "LANDCOVER": 12
   },
   {
     "GPCODE": 112000,
@@ -2566,12 +1778,8 @@
     "BLOCK": "Topchanchi",
     "DISTRICT": "Dhanbad",
     "ELEVATION": 281,
-    "SLOPE": 2.1133246,
-    "LANDCOVER": 12,
-    "LANDCOVER_VALID": true,
-    "HAS_STATIC_MISMATCH": false,
-    "MISMATCHED_FIELDS_NEEDS_MANUAL_REVIEW": "",
-    "MISSING_STATIC_FIELDS": ""
+    "SLOPE": 2.113325,
+    "LANDCOVER": 12
   },
   {
     "GPCODE": 112001,
@@ -2580,11 +1788,7 @@
     "DISTRICT": "Dhanbad",
     "ELEVATION": 300,
     "SLOPE": 2.113354,
-    "LANDCOVER": 12,
-    "LANDCOVER_VALID": true,
-    "HAS_STATIC_MISMATCH": false,
-    "MISMATCHED_FIELDS_NEEDS_MANUAL_REVIEW": "",
-    "MISSING_STATIC_FIELDS": ""
+    "LANDCOVER": 12
   },
   {
     "GPCODE": 112002,
@@ -2593,11 +1797,7 @@
     "DISTRICT": "Dhanbad",
     "ELEVATION": 292,
     "SLOPE": 26.433105,
-    "LANDCOVER": 12,
-    "LANDCOVER_VALID": true,
-    "HAS_STATIC_MISMATCH": false,
-    "MISMATCHED_FIELDS_NEEDS_MANUAL_REVIEW": "",
-    "MISSING_STATIC_FIELDS": ""
+    "LANDCOVER": 12
   },
   {
     "GPCODE": 112003,
@@ -2605,12 +1805,8 @@
     "BLOCK": "Topchanchi",
     "DISTRICT": "Dhanbad",
     "ELEVATION": 279,
-    "SLOPE": 1.3743043,
-    "LANDCOVER": 12,
-    "LANDCOVER_VALID": true,
-    "HAS_STATIC_MISMATCH": false,
-    "MISMATCHED_FIELDS_NEEDS_MANUAL_REVIEW": "",
-    "MISSING_STATIC_FIELDS": ""
+    "SLOPE": 1.374304,
+    "LANDCOVER": 12
   },
   {
     "GPCODE": 112004,
@@ -2618,12 +1814,8 @@
     "BLOCK": "Topchanchi",
     "DISTRICT": "Dhanbad",
     "ELEVATION": 285,
-    "SLOPE": 2.0284014,
-    "LANDCOVER": 12,
-    "LANDCOVER_VALID": true,
-    "HAS_STATIC_MISMATCH": false,
-    "MISMATCHED_FIELDS_NEEDS_MANUAL_REVIEW": "",
-    "MISSING_STATIC_FIELDS": ""
+    "SLOPE": 2.028401,
+    "LANDCOVER": 12
   },
   {
     "GPCODE": 112005,
@@ -2631,12 +1823,8 @@
     "BLOCK": "Topchanchi",
     "DISTRICT": "Dhanbad",
     "ELEVATION": 234,
-    "SLOPE": 0.92740995,
-    "LANDCOVER": 12,
-    "LANDCOVER_VALID": true,
-    "HAS_STATIC_MISMATCH": false,
-    "MISMATCHED_FIELDS_NEEDS_MANUAL_REVIEW": "",
-    "MISSING_STATIC_FIELDS": ""
+    "SLOPE": 0.92741,
+    "LANDCOVER": 12
   },
   {
     "GPCODE": 112006,
@@ -2644,12 +1832,8 @@
     "BLOCK": "Topchanchi",
     "DISTRICT": "Dhanbad",
     "ELEVATION": 248,
-    "SLOPE": 0.92740995,
-    "LANDCOVER": 12,
-    "LANDCOVER_VALID": true,
-    "HAS_STATIC_MISMATCH": false,
-    "MISMATCHED_FIELDS_NEEDS_MANUAL_REVIEW": "",
-    "MISSING_STATIC_FIELDS": ""
+    "SLOPE": 0.92741,
+    "LANDCOVER": 12
   },
   {
     "GPCODE": 112007,
@@ -2657,12 +1841,8 @@
     "BLOCK": "Topchanchi",
     "DISTRICT": "Dhanbad",
     "ELEVATION": 257,
-    "SLOPE": 2.1131806,
-    "LANDCOVER": 12,
-    "LANDCOVER_VALID": true,
-    "HAS_STATIC_MISMATCH": false,
-    "MISMATCHED_FIELDS_NEEDS_MANUAL_REVIEW": "",
-    "MISSING_STATIC_FIELDS": ""
+    "SLOPE": 2.113181,
+    "LANDCOVER": 12
   },
   {
     "GPCODE": 112008,
@@ -2671,11 +1851,7 @@
     "DISTRICT": "Dhanbad",
     "ELEVATION": 263,
     "SLOPE": 2.113188,
-    "LANDCOVER": 12,
-    "LANDCOVER_VALID": true,
-    "HAS_STATIC_MISMATCH": false,
-    "MISMATCHED_FIELDS_NEEDS_MANUAL_REVIEW": "",
-    "MISSING_STATIC_FIELDS": ""
+    "LANDCOVER": 12
   },
   {
     "GPCODE": 112009,
@@ -2683,12 +1859,8 @@
     "BLOCK": "Topchanchi",
     "DISTRICT": "Dhanbad",
     "ELEVATION": 313,
-    "SLOPE": 7.2989845,
-    "LANDCOVER": 12,
-    "LANDCOVER_VALID": true,
-    "HAS_STATIC_MISMATCH": false,
-    "MISMATCHED_FIELDS_NEEDS_MANUAL_REVIEW": "",
-    "MISSING_STATIC_FIELDS": ""
+    "SLOPE": 7.298984,
+    "LANDCOVER": 12
   },
   {
     "GPCODE": 112010,
@@ -2696,12 +1868,8 @@
     "BLOCK": "Topchanchi",
     "DISTRICT": "Dhanbad",
     "ELEVATION": 302,
-    "SLOPE": 4.6273675,
-    "LANDCOVER": 12,
-    "LANDCOVER_VALID": true,
-    "HAS_STATIC_MISMATCH": false,
-    "MISMATCHED_FIELDS_NEEDS_MANUAL_REVIEW": "",
-    "MISSING_STATIC_FIELDS": ""
+    "SLOPE": 4.627368,
+    "LANDCOVER": 12
   },
   {
     "GPCODE": 112011,
@@ -2709,12 +1877,8 @@
     "BLOCK": "Tundi",
     "DISTRICT": "Dhanbad",
     "ELEVATION": 248,
-    "SLOPE": 3.1789412,
-    "LANDCOVER": 12,
-    "LANDCOVER_VALID": true,
-    "HAS_STATIC_MISMATCH": false,
-    "MISMATCHED_FIELDS_NEEDS_MANUAL_REVIEW": "",
-    "MISSING_STATIC_FIELDS": ""
+    "SLOPE": 3.178941,
+    "LANDCOVER": 12
   },
   {
     "GPCODE": 112012,
@@ -2723,11 +1887,7 @@
     "DISTRICT": "Dhanbad",
     "ELEVATION": 312,
     "SLOPE": 7.488362,
-    "LANDCOVER": 4,
-    "LANDCOVER_VALID": true,
-    "HAS_STATIC_MISMATCH": false,
-    "MISMATCHED_FIELDS_NEEDS_MANUAL_REVIEW": "",
-    "MISSING_STATIC_FIELDS": ""
+    "LANDCOVER": 4
   },
   {
     "GPCODE": 112013,
@@ -2735,12 +1895,8 @@
     "BLOCK": "Purvi Tundi",
     "DISTRICT": "Dhanbad",
     "ELEVATION": 216,
-    "SLOPE": 2.7477622,
-    "LANDCOVER": 12,
-    "LANDCOVER_VALID": true,
-    "HAS_STATIC_MISMATCH": false,
-    "MISMATCHED_FIELDS_NEEDS_MANUAL_REVIEW": "",
-    "MISSING_STATIC_FIELDS": ""
+    "SLOPE": 2.747762,
+    "LANDCOVER": 12
   },
   {
     "GPCODE": 112014,
@@ -2748,12 +1904,8 @@
     "BLOCK": "Tundi",
     "DISTRICT": "Dhanbad",
     "ELEVATION": 218,
-    "SLOPE": 2.7484498,
-    "LANDCOVER": 12,
-    "LANDCOVER_VALID": true,
-    "HAS_STATIC_MISMATCH": false,
-    "MISMATCHED_FIELDS_NEEDS_MANUAL_REVIEW": "",
-    "MISSING_STATIC_FIELDS": ""
+    "SLOPE": 2.74845,
+    "LANDCOVER": 12
   },
   {
     "GPCODE": 112015,
@@ -2762,11 +1914,7 @@
     "DISTRICT": "Dhanbad",
     "ELEVATION": 307,
     "SLOPE": 5.482732,
-    "LANDCOVER": 12,
-    "LANDCOVER_VALID": true,
-    "HAS_STATIC_MISMATCH": false,
-    "MISMATCHED_FIELDS_NEEDS_MANUAL_REVIEW": "",
-    "MISSING_STATIC_FIELDS": ""
+    "LANDCOVER": 12
   },
   {
     "GPCODE": 112016,
@@ -2774,12 +1922,8 @@
     "BLOCK": "Tundi",
     "DISTRICT": "Dhanbad",
     "ELEVATION": 232,
-    "SLOPE": 2.0282488,
-    "LANDCOVER": 12,
-    "LANDCOVER_VALID": true,
-    "HAS_STATIC_MISMATCH": false,
-    "MISMATCHED_FIELDS_NEEDS_MANUAL_REVIEW": "",
-    "MISSING_STATIC_FIELDS": ""
+    "SLOPE": 2.028249,
+    "LANDCOVER": 12
   },
   {
     "GPCODE": 112017,
@@ -2787,12 +1931,8 @@
     "BLOCK": "Tundi",
     "DISTRICT": "Dhanbad",
     "ELEVATION": 243,
-    "SLOPE": 2.7472925,
-    "LANDCOVER": 12,
-    "LANDCOVER_VALID": true,
-    "HAS_STATIC_MISMATCH": false,
-    "MISMATCHED_FIELDS_NEEDS_MANUAL_REVIEW": "",
-    "MISSING_STATIC_FIELDS": ""
+    "SLOPE": 2.747292,
+    "LANDCOVER": 12
   },
   {
     "GPCODE": 112018,
@@ -2800,12 +1940,8 @@
     "BLOCK": "Tundi",
     "DISTRICT": "Dhanbad",
     "ELEVATION": 258,
-    "SLOPE": 1.0146538,
-    "LANDCOVER": 12,
-    "LANDCOVER_VALID": true,
-    "HAS_STATIC_MISMATCH": false,
-    "MISMATCHED_FIELDS_NEEDS_MANUAL_REVIEW": "",
-    "MISSING_STATIC_FIELDS": ""
+    "SLOPE": 1.014654,
+    "LANDCOVER": 12
   },
   {
     "GPCODE": 112019,
@@ -2813,12 +1949,8 @@
     "BLOCK": "Tundi",
     "DISTRICT": "Dhanbad",
     "ELEVATION": 226,
-    "SLOPE": 3.7047918,
-    "LANDCOVER": 12,
-    "LANDCOVER_VALID": true,
-    "HAS_STATIC_MISMATCH": false,
-    "MISMATCHED_FIELDS_NEEDS_MANUAL_REVIEW": "",
-    "MISSING_STATIC_FIELDS": ""
+    "SLOPE": 3.704792,
+    "LANDCOVER": 12
   },
   {
     "GPCODE": 112020,
@@ -2827,11 +1959,7 @@
     "DISTRICT": "Dhanbad",
     "ELEVATION": 230,
     "SLOPE": 1.014427,
-    "LANDCOVER": 12,
-    "LANDCOVER_VALID": true,
-    "HAS_STATIC_MISMATCH": false,
-    "MISMATCHED_FIELDS_NEEDS_MANUAL_REVIEW": "",
-    "MISSING_STATIC_FIELDS": ""
+    "LANDCOVER": 12
   },
   {
     "GPCODE": 112021,
@@ -2839,12 +1967,8 @@
     "BLOCK": "Purvi Tundi",
     "DISTRICT": "Dhanbad",
     "ELEVATION": 231,
-    "SLOPE": 7.6466227,
-    "LANDCOVER": 12,
-    "LANDCOVER_VALID": true,
-    "HAS_STATIC_MISMATCH": false,
-    "MISMATCHED_FIELDS_NEEDS_MANUAL_REVIEW": "",
-    "MISSING_STATIC_FIELDS": ""
+    "SLOPE": 7.646623,
+    "LANDCOVER": 12
   },
   {
     "GPCODE": 112022,
@@ -2852,12 +1976,8 @@
     "BLOCK": "Tundi",
     "DISTRICT": "Dhanbad",
     "ELEVATION": 216,
-    "SLOPE": 3.4401083,
-    "LANDCOVER": 12,
-    "LANDCOVER_VALID": true,
-    "HAS_STATIC_MISMATCH": false,
-    "MISMATCHED_FIELDS_NEEDS_MANUAL_REVIEW": "",
-    "MISSING_STATIC_FIELDS": ""
+    "SLOPE": 3.440108,
+    "LANDCOVER": 12
   },
   {
     "GPCODE": 112023,
@@ -2865,12 +1985,8 @@
     "BLOCK": "Tundi",
     "DISTRICT": "Dhanbad",
     "ELEVATION": 273,
-    "SLOPE": 6.5427394,
-    "LANDCOVER": 12,
-    "LANDCOVER_VALID": true,
-    "HAS_STATIC_MISMATCH": false,
-    "MISMATCHED_FIELDS_NEEDS_MANUAL_REVIEW": "",
-    "MISSING_STATIC_FIELDS": ""
+    "SLOPE": 6.542739,
+    "LANDCOVER": 12
   },
   {
     "GPCODE": 112024,
@@ -2878,12 +1994,8 @@
     "BLOCK": "Purvi Tundi",
     "DISTRICT": "Dhanbad",
     "ELEVATION": 185,
-    "SLOPE": 3.1793346,
-    "LANDCOVER": 12,
-    "LANDCOVER_VALID": true,
-    "HAS_STATIC_MISMATCH": false,
-    "MISMATCHED_FIELDS_NEEDS_MANUAL_REVIEW": "",
-    "MISSING_STATIC_FIELDS": ""
+    "SLOPE": 3.179335,
+    "LANDCOVER": 12
   },
   {
     "GPCODE": 112025,
@@ -2891,12 +2003,8 @@
     "BLOCK": "Tundi",
     "DISTRICT": "Dhanbad",
     "ELEVATION": 286,
-    "SLOPE": 1.3747814,
-    "LANDCOVER": 12,
-    "LANDCOVER_VALID": true,
-    "HAS_STATIC_MISMATCH": false,
-    "MISMATCHED_FIELDS_NEEDS_MANUAL_REVIEW": "",
-    "MISSING_STATIC_FIELDS": ""
+    "SLOPE": 1.374781,
+    "LANDCOVER": 12
   },
   {
     "GPCODE": 112026,
@@ -2904,12 +2012,8 @@
     "BLOCK": "Purvi Tundi",
     "DISTRICT": "Dhanbad",
     "ELEVATION": 171,
-    "SLOPE": 0.92740995,
-    "LANDCOVER": 12,
-    "LANDCOVER_VALID": true,
-    "HAS_STATIC_MISMATCH": false,
-    "MISMATCHED_FIELDS_NEEDS_MANUAL_REVIEW": "",
-    "MISSING_STATIC_FIELDS": ""
+    "SLOPE": 0.92741,
+    "LANDCOVER": 12
   },
   {
     "GPCODE": 112027,
@@ -2917,12 +2021,8 @@
     "BLOCK": "Tundi",
     "DISTRICT": "Dhanbad",
     "ELEVATION": 249,
-    "SLOPE": 1.8543341,
-    "LANDCOVER": 12,
-    "LANDCOVER_VALID": true,
-    "HAS_STATIC_MISMATCH": false,
-    "MISMATCHED_FIELDS_NEEDS_MANUAL_REVIEW": "",
-    "MISSING_STATIC_FIELDS": ""
+    "SLOPE": 1.854334,
+    "LANDCOVER": 12
   },
   {
     "GPCODE": 112028,
@@ -2931,11 +2031,7 @@
     "DISTRICT": "Dhanbad",
     "ELEVATION": 232,
     "SLOPE": 3.180731,
-    "LANDCOVER": 12,
-    "LANDCOVER_VALID": true,
-    "HAS_STATIC_MISMATCH": false,
-    "MISMATCHED_FIELDS_NEEDS_MANUAL_REVIEW": "",
-    "MISSING_STATIC_FIELDS": ""
+    "LANDCOVER": 12
   },
   {
     "GPCODE": 112029,
@@ -2944,11 +2040,7 @@
     "DISTRICT": "Dhanbad",
     "ELEVATION": 208,
     "SLOPE": 3.559693,
-    "LANDCOVER": 12,
-    "LANDCOVER_VALID": true,
-    "HAS_STATIC_MISMATCH": false,
-    "MISMATCHED_FIELDS_NEEDS_MANUAL_REVIEW": "",
-    "MISSING_STATIC_FIELDS": ""
+    "LANDCOVER": 12
   },
   {
     "GPCODE": 112030,
@@ -2956,12 +2048,8 @@
     "BLOCK": "Tundi",
     "DISTRICT": "Dhanbad",
     "ELEVATION": 260,
-    "SLOPE": 4.1559024,
-    "LANDCOVER": 12,
-    "LANDCOVER_VALID": true,
-    "HAS_STATIC_MISMATCH": false,
-    "MISMATCHED_FIELDS_NEEDS_MANUAL_REVIEW": "",
-    "MISSING_STATIC_FIELDS": ""
+    "SLOPE": 4.155902,
+    "LANDCOVER": 12
   },
   {
     "GPCODE": 112031,
@@ -2969,12 +2057,8 @@
     "BLOCK": "Purvi Tundi",
     "DISTRICT": "Dhanbad",
     "ELEVATION": 288,
-    "SLOPE": 7.9684143,
-    "LANDCOVER": 12,
-    "LANDCOVER_VALID": true,
-    "HAS_STATIC_MISMATCH": false,
-    "MISMATCHED_FIELDS_NEEDS_MANUAL_REVIEW": "",
-    "MISSING_STATIC_FIELDS": ""
+    "SLOPE": 7.968414,
+    "LANDCOVER": 12
   },
   {
     "GPCODE": 112032,
@@ -2982,12 +2066,8 @@
     "BLOCK": "Tundi",
     "DISTRICT": "Dhanbad",
     "ELEVATION": 201,
-    "SLOPE": 5.0493565,
-    "LANDCOVER": 12,
-    "LANDCOVER_VALID": true,
-    "HAS_STATIC_MISMATCH": false,
-    "MISMATCHED_FIELDS_NEEDS_MANUAL_REVIEW": "",
-    "MISSING_STATIC_FIELDS": ""
+    "SLOPE": 5.049356,
+    "LANDCOVER": 12
   },
   {
     "GPCODE": 112033,
@@ -2996,11 +2076,7 @@
     "DISTRICT": "Dhanbad",
     "ELEVATION": 277,
     "SLOPE": 8.2891,
-    "LANDCOVER": 12,
-    "LANDCOVER_VALID": true,
-    "HAS_STATIC_MISMATCH": false,
-    "MISMATCHED_FIELDS_NEEDS_MANUAL_REVIEW": "",
-    "MISSING_STATIC_FIELDS": ""
+    "LANDCOVER": 12
   },
   {
     "GPCODE": 112034,
@@ -3009,11 +2085,7 @@
     "DISTRICT": "Dhanbad",
     "ELEVATION": 236,
     "SLOPE": 2.113603,
-    "LANDCOVER": 12,
-    "LANDCOVER_VALID": true,
-    "HAS_STATIC_MISMATCH": false,
-    "MISMATCHED_FIELDS_NEEDS_MANUAL_REVIEW": "",
-    "MISSING_STATIC_FIELDS": ""
+    "LANDCOVER": 12
   },
   {
     "GPCODE": 112035,
@@ -3021,12 +2093,8 @@
     "BLOCK": "Purvi Tundi",
     "DISTRICT": "Dhanbad",
     "ELEVATION": 205,
-    "SLOPE": 3.8405213,
-    "LANDCOVER": 12,
-    "LANDCOVER_VALID": true,
-    "HAS_STATIC_MISMATCH": false,
-    "MISMATCHED_FIELDS_NEEDS_MANUAL_REVIEW": "",
-    "MISSING_STATIC_FIELDS": ""
+    "SLOPE": 3.840521,
+    "LANDCOVER": 12
   },
   {
     "GPCODE": 245449,
@@ -3034,12 +2102,8 @@
     "BLOCK": "Baghmara",
     "DISTRICT": "Dhanbad",
     "ELEVATION": 223,
-    "SLOPE": 2.7802885,
-    "LANDCOVER": 12,
-    "LANDCOVER_VALID": true,
-    "HAS_STATIC_MISMATCH": false,
-    "MISMATCHED_FIELDS_NEEDS_MANUAL_REVIEW": "",
-    "MISSING_STATIC_FIELDS": ""
+    "SLOPE": 2.780288,
+    "LANDCOVER": 12
   },
   {
     "GPCODE": 245450,
@@ -3047,12 +2111,8 @@
     "BLOCK": "Dhanbad",
     "DISTRICT": "Dhanbad",
     "ELEVATION": 250,
-    "SLOPE": 4.2203603,
-    "LANDCOVER": 12,
-    "LANDCOVER_VALID": true,
-    "HAS_STATIC_MISMATCH": false,
-    "MISMATCHED_FIELDS_NEEDS_MANUAL_REVIEW": "",
-    "MISSING_STATIC_FIELDS": ""
+    "SLOPE": 4.22036,
+    "LANDCOVER": 12
   },
   {
     "GPCODE": 245451,
@@ -3060,12 +2120,8 @@
     "BLOCK": "Dhanbad",
     "DISTRICT": "Dhanbad",
     "ELEVATION": 177,
-    "SLOPE": 0.92740995,
-    "LANDCOVER": 12,
-    "LANDCOVER_VALID": true,
-    "HAS_STATIC_MISMATCH": false,
-    "MISMATCHED_FIELDS_NEEDS_MANUAL_REVIEW": "",
-    "MISSING_STATIC_FIELDS": ""
+    "SLOPE": 0.92741,
+    "LANDCOVER": 12
   },
   {
     "GPCODE": 245452,
@@ -3074,11 +2130,7 @@
     "DISTRICT": "Dhanbad",
     "ELEVATION": 164,
     "SLOPE": 4.784118,
-    "LANDCOVER": 12,
-    "LANDCOVER_VALID": true,
-    "HAS_STATIC_MISMATCH": false,
-    "MISMATCHED_FIELDS_NEEDS_MANUAL_REVIEW": "",
-    "MISSING_STATIC_FIELDS": ""
+    "LANDCOVER": 12
   },
   {
     "GPCODE": 245453,
@@ -3086,12 +2138,8 @@
     "BLOCK": "Baliapur",
     "DISTRICT": "Dhanbad",
     "ELEVATION": 188,
-    "SLOPE": 4.7846923,
-    "LANDCOVER": 12,
-    "LANDCOVER_VALID": true,
-    "HAS_STATIC_MISMATCH": false,
-    "MISMATCHED_FIELDS_NEEDS_MANUAL_REVIEW": "",
-    "MISSING_STATIC_FIELDS": ""
+    "SLOPE": 4.784692,
+    "LANDCOVER": 12
   },
   {
     "GPCODE": 277569,
@@ -3099,11 +2147,7 @@
     "BLOCK": "Purvi Tundi",
     "DISTRICT": "Dhanbad",
     "ELEVATION": 161,
-    "SLOPE": 7.1249337,
-    "LANDCOVER": 12,
-    "LANDCOVER_VALID": true,
-    "HAS_STATIC_MISMATCH": false,
-    "MISMATCHED_FIELDS_NEEDS_MANUAL_REVIEW": "",
-    "MISSING_STATIC_FIELDS": ""
+    "SLOPE": 7.124934,
+    "LANDCOVER": 12
   }
 ]
