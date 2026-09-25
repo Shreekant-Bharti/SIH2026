@@ -1,0 +1,3 @@
+import { createFileRoute } from "@tanstack/react-router";
+import { Dashboard } from "@/components/dashboard/dashboard";
+export const Route = createFileRoute("/map")({ head: () => ({ meta: [{ title: "Administrative Map — MonsoonScope" }, { name: "description", content: "Explore India from State and District to Block and Panchayat with verified administrative geometry." }, { property: "og:title", content: "Administrative Map — MonsoonScope" }, { property: "og:description", content: "Geographic drill-down with Dhanbad block boundaries and project Panchayat metadata." }, { property: "og:type", content: "website" }, { name: "twitter:card", content: "summary_large_image" }] }), component: Dashboard });

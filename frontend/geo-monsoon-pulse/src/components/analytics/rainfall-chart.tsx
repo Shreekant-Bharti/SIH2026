@@ -1,0 +1,14 @@
+import { useState } from "react";
+import { Area, AreaChart, CartesianGrid, Legend, Line, ResponsiveContainer, Tooltip, XAxis, YAxis } from "recharts";
+import { Button } from "@/components/ui/button";
+import { DataStatePanel } from "@/components/scientific/data-state";
+import type { RainfallPoint } from "@/types/monsoon";
+
+export function RainfallChart({ data }: { data: RainfallPoint[] }) {
+  const [range, setRange] = useState<7 | 30>(7);
+  const shown = data.slice(-range);
+  return <section aria-labelledby="rainfall-title">
+    <div className="mb-3 flex items-end justify-between"><div><p className="eyebrow">Rainfall analytics</p><h2 id="rainfall-title" className="section-title">Reference and model rainfall</h2></div>{data.length > 0 && <div className="flex border border-border bg-background p-0.5">{([7, 30] as const).map((value) => <Button size="sm" variant={range === value ? "primary" : "ghost"} key={value} onClick={() => setRange(value)}>{value}D</Button>)}</div>}</div>
+    {data.length === 0 ? <DataStatePanel state="empty" title="No rainfall data" message="No reference, predicted, or observed rainfall records are available for the selected period." /> : <><p className="sr-only">Chart comparing reference, predicted, and observed rainfall in millimetres by date.</p><div className="h-[320px] rounded-md border border-border bg-card p-3 pt-5 sm:p-5"><ResponsiveContainer width="100%" height="100%"><AreaChart data={shown} margin={{ top: 8, right: 10, left: -10, bottom: 14 }}><CartesianGrid stroke="var(--border)" vertical={false} /><XAxis dataKey="date" label={{ value: "Date", position: "insideBottom", offset: -8 }} tick={{ fontSize: 10, fill: "var(--muted-foreground)", fontWeight: 600, fontFamily: "IBM Plex Mono" }} axisLine={false} tickLine={false} minTickGap={24}/><YAxis label={{ value: "Rainfall (mm)", angle: -90, position: "insideLeft" }} unit=" mm" tick={{ fontSize: 10, fill: "var(--muted-foreground)", fontWeight: 600, fontFamily: "IBM Plex Mono" }} axisLine={false} tickLine={false}/><Tooltip contentStyle={{ border: "1px solid var(--border)", borderRadius: 4, fontSize: 12, background: "var(--card)", color: "var(--foreground)" }} /><Legend wrapperStyle={{ fontSize: 12, paddingTop: 10 }} /><Area type="monotone" dataKey="referenceMm" name="Reference" stroke="var(--rain-heavy)" strokeWidth={2} fill="var(--rain-pale)"/><Line type="monotone" dataKey="predictedMm" name="Predicted" stroke="var(--rain-light)" strokeWidth={2} strokeDasharray="5 4" dot={false}/><Line type="monotone" dataKey="observedMm" name="Observed" stroke="var(--normal)" strokeWidth={2} dot={false}/></AreaChart></ResponsiveContainer></div></>}
+  </section>;
+}

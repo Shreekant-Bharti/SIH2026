@@ -1,0 +1,5 @@
+import { createFileRoute } from "@tanstack/react-router";
+import { RainfallChart } from "@/components/analytics/rainfall-chart";
+import { ProductPage } from "@/components/pages/product-page";
+import { ModelInformation } from "@/components/scientific/model-information";
+export const Route = createFileRoute("/rainfall")({ head: () => ({ meta: [{ title: "Rainfall Analytics — MonsoonScope" }, { name: "description", content: "Analyze reference, predicted, observed, and historical rainfall when project data is available." }, { property: "og:title", content: "Rainfall Analytics — MonsoonScope" }, { property: "og:description", content: "Scientific rainfall analysis and reference-versus-downscaled comparison." }, { property: "og:type", content: "website" }, { name: "twitter:card", content: "summary_large_image" }] }), component: () => <ProductPage eyebrow="Core analytical workspace" title="Rainfall analytics" description="Explore reference rainfall, Panchayat-level model output, observed records, and cumulative rainfall when connected data is available."><div className="grid gap-8"><RainfallChart data={[]} /><ModelInformation /></div></ProductPage> });

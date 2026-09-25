@@ -1,0 +1,5 @@
+import { createFileRoute } from "@tanstack/react-router";
+import { PredictionPanel } from "@/components/predictions/prediction-panel";
+import { ProductPage } from "@/components/pages/product-page";
+import { monsoonService } from "@/services/monsoon-service";
+export const Route = createFileRoute("/predictions")({ head: () => ({ meta: [{ title: "Rainfall Prediction — MonsoonScope" }, { name: "description", content: "Review Panchayat-level Ridge Residual rainfall output and its reference rainfall comparison." }, { property: "og:title", content: "Rainfall Prediction — MonsoonScope" }, { property: "og:description", content: "Transparent reference-versus-downscaled Panchayat rainfall presentation." }, { property: "og:type", content: "website" }, { name: "twitter:card", content: "summary_large_image" }] }), component: () => <ProductPage eyebrow="Ridge Residual" title="Rainfall prediction" description="The model service will provide selected Panchayat, date, reference rainfall, downscaled rainfall, difference, and version through the project service layer."><PredictionPanel data={monsoonService.getRainfallIntelligence()} /></ProductPage> });
