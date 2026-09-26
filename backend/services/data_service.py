@@ -37,6 +37,7 @@ class DataService:
         self.blocks: List[str] = []
         self.panchayats_by_block: Dict[str, List[Dict[str, Any]]] = {}
         self.validation_metrics: Dict[int, Dict[str, Any]] = {}
+        self._prediction_inputs: Optional[pd.DataFrame] = None
         self._test_preds_df: Optional[pd.DataFrame] = None
         self._missing_obs_df: Optional[pd.DataFrame] = None
 
@@ -49,6 +50,19 @@ class DataService:
         # 1. Load static Panchayat metadata from master_dataset_v2.csv
         if self.master_csv_path.exists():
             df_master = pd.read_csv(self.master_csv_path)
+            self._prediction_inputs = df_master.set_index(["GPCODE", "DATE"])[
+                [
+                    "TEMPERATURE",
+                    "HUMIDITY",
+                    "WIND",
+                    "ET",
+                    "ELEVATION",
+                    "SLOPE",
+                    "LANDCOVER",
+                    "REFERENCE_RAINFALL",
+                    "RAINFALL",
+                ]
+            ]
             grouped = df_master.groupby("GPCODE").agg({
                 "GPNAME": "first",
                 "BLOCK": "first",
@@ -104,9 +118,11 @@ class DataService:
                     "gpcode": gpcode,
                     "rmse": round(float(row["ML_RMSE"]), 2),
                     "mae": round(float(row["ML_MAE"]), 2),
+                    "r2": round(float(row["ML_R2"]), 2),
                     "bias": round(float(row["ML_Bias"]), 2),
                     "correlation": round(float(row["ML_Correlation"]), 2),
                     "baseline_rmse": round(float(row["REF_RMSE"]), 2),
+                    "baseline_mae": round(float(row["REF_MAE"]), 2),
                     "model_rmse": round(float(row["ML_RMSE"]), 2),
                 }
             logger.info("Loaded validation metrics for %d panchayats.", len(self.validation_metrics))
@@ -130,6 +146,49 @@ class DataService:
     def get_panchayat_by_gpcode(self, gpcode: int) -> Optional[Dict[str, Any]]:
         """Returns static terrain and administrative attributes for a GPCODE."""
         return self.panchayats_meta.get(gpcode)
+
+    def get_prediction_input(
+        self, gpcode: int, date: str
+    ) -> Tuple[str, Optional[Dict[str, Any]]]:
+        """Returns the real raw model inputs for a Panchayat/date pair."""
+        if gpcode not in self.panchayats_meta:
+            return "not_found", None
+        if self._prediction_inputs is None:
+            return "unavailable", None
+
+        try:
+            row = self._prediction_inputs.loc[(gpcode, date)]
+        except KeyError:
+            return "date_not_found", None
+
+        model_fields = [
+            "TEMPERATURE",
+            "HUMIDITY",
+            "WIND",
+            "ET",
+            "ELEVATION",
+            "SLOPE",
+            "LANDCOVER",
+            "REFERENCE_RAINFALL",
+        ]
+        missing_fields = [field for field in model_fields if pd.isna(row[field])]
+        if missing_fields:
+            return "incomplete", {"missing_fields": missing_fields}
+
+        observed = row["RAINFALL"]
+        return "ok", {
+            "gpcode": gpcode,
+            "date": date,
+            "temperature": float(row["TEMPERATURE"]),
+            "humidity": float(row["HUMIDITY"]),
+            "wind": float(row["WIND"]),
+            "et": float(row["ET"]),
+            "elevation": float(row["ELEVATION"]),
+            "slope": float(row["SLOPE"]),
+            "landcover": int(row["LANDCOVER"]),
+            "reference_rainfall": float(row["REFERENCE_RAINFALL"]),
+            "observed_rainfall_mm": None if pd.isna(observed) else float(observed),
+        }
 
     def get_validation_metrics(self, gpcode: int) -> Tuple[str, Optional[Dict[str, Any]]]:
         """

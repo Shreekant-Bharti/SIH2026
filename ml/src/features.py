@@ -40,7 +40,7 @@ def extract_features(df: pd.DataFrame) -> pd.DataFrame:
     df = df.copy()
     
     # Ensure DATE is datetime
-    if not np.issubdtype(df['DATE'].dtype, np.datetime64):
+    if not pd.api.types.is_datetime64_any_dtype(df['DATE']):
         df['DATE'] = pd.to_datetime(df['DATE'])
         
     # Temporal Features

@@ -112,6 +112,83 @@ def test_panchayat_detail_not_found(client):
     assert response.status_code == 404
 
 
+def test_prediction_input_matches_master_dataset(client):
+    date = "2024-07-15"
+    response = client.get(f"/input/111722?date={date}")
+    assert response.status_code == 200
+    data = response.json()
+
+    master = pd.read_csv(
+        REPO_ROOT / "ml" / "data" / "raw" / "master_dataset_v2.csv",
+        usecols=[
+            "DATE",
+            "GPCODE",
+            "RAINFALL",
+            "REFERENCE_RAINFALL",
+            "TEMPERATURE",
+            "HUMIDITY",
+            "WIND",
+            "ET",
+            "ELEVATION",
+            "SLOPE",
+            "LANDCOVER",
+        ],
+    )
+    row = master[(master["GPCODE"] == 111722) & (master["DATE"] == date)].iloc[0]
+    assert data["gpcode"] == int(row["GPCODE"])
+    assert data["date"] == date
+    for field in (
+        "temperature",
+        "humidity",
+        "wind",
+        "et",
+        "elevation",
+        "slope",
+        "reference_rainfall",
+    ):
+        assert data[field] == pytest.approx(float(row[field.upper()]))
+    assert data["landcover"] == int(row["LANDCOVER"])
+    assert data["observed_rainfall_mm"] == pytest.approx(float(row["RAINFALL"]))
+
+
+def test_prediction_input_rejects_unknown_gp_invalid_date_and_missing_date(client):
+    assert client.get("/input/999999?date=2024-07-15").status_code == 404
+    assert client.get("/input/111722?date=not-a-date").status_code == 400
+    assert client.get("/input/111722?date=2025-01-01").status_code == 404
+
+
+def test_prediction_input_keeps_missing_observation_null(client):
+    response = client.get("/input/111755?date=2024-07-15")
+    assert response.status_code == 200
+    data = response.json()
+    assert data["gpcode"] == 111755
+    assert data["observed_rainfall_mm"] is None
+    assert data["temperature"] is not None
+    assert data["reference_rainfall"] is not None
+
+
+def test_prediction_input_reports_incomplete_model_features(client, monkeypatch):
+    data_service = main_module.get_data_service()
+    incomplete = data_service._prediction_inputs.copy()
+    incomplete.loc[(111722, "2024-07-15"), "TEMPERATURE"] = float("nan")
+    monkeypatch.setattr(data_service, "_prediction_inputs", incomplete)
+
+    response = client.get("/input/111722?date=2024-07-15")
+    assert response.status_code == 422
+    assert "TEMPERATURE" in response.json()["detail"]
+
+
+def test_prediction_from_retrieved_input_runs_model(client):
+    input_response = client.get("/input/111722?date=2024-07-15")
+    assert input_response.status_code == 200
+    prediction_response = client.post("/predict", json=input_response.json())
+    assert prediction_response.status_code == 200
+    prediction = prediction_response.json()
+    assert prediction["gpcode"] == 111722
+    assert prediction["date"] == "2024-07-15"
+    assert prediction["predicted_rainfall_mm"] >= 0
+
+
 def test_predict_valid_input(client):
     """
     Test 6: POST /predict with real valid input returns non-negative predicted rainfall.
@@ -340,7 +417,9 @@ def test_validation_endpoint_available(client):
     assert data["gpcode"] == 111722
     assert "rmse" in data
     assert "mae" in data
+    assert "r2" in data
     assert "baseline_rmse" in data
+    assert "baseline_mae" in data
     assert "model_rmse" in data
 
 

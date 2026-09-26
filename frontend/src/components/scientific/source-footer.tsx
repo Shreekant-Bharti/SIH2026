@@ -2,13 +2,18 @@ import { Database, FlaskConical } from "lucide-react";
 
 export function SourceFooter({ compact = false }: { compact?: boolean }) {
   return (
-    <aside className={`source-strip ${compact ? "mt-5" : "mt-8"}`} aria-label="Data sources and status">
+    <aside
+      className={`source-strip ${compact ? "mt-5" : "mt-8"}`}
+      aria-label="Data sources and status"
+    >
       <div className="flex items-start gap-3">
         <Database className="mt-0.5 size-4 shrink-0 text-primary" />
         <div>
           <p className="metric-label">Data sources</p>
           <p className="mt-1 text-xs leading-5 text-muted-foreground">
-            Administrative boundaries: geoBoundaries / DataMeet and LGD 2024. Project Panchayat metadata: Dhanbad records keyed by GPCODE. Reference rainfall, observed rainfall, and model output: unavailable until their project services are connected.
+            Administrative boundaries: geoBoundaries / DataMeet and LGD 2024. Project Panchayat
+            metadata and historical rainfall/model records are served by the Dhanbad backend and
+            keyed by GPCODE.
           </p>
         </div>
       </div>

@@ -30,6 +30,7 @@ try:
         ModelInfoResponse,
         PanchayatDetail,
         PanchayatsResponse,
+        PredictionInputResponse,
         PredictionRequest,
         PredictionResponse,
         ValidationResponse,
@@ -45,6 +46,7 @@ except ImportError:
         ModelInfoResponse,
         PanchayatDetail,
         PanchayatsResponse,
+        PredictionInputResponse,
         PredictionRequest,
         PredictionResponse,
         ValidationResponse,
@@ -230,6 +232,46 @@ def get_panchayat_detail(gpcode: int):
 # -----------------------------------------------------------------------------
 # 3. Model Inference Endpoint
 # -----------------------------------------------------------------------------
+
+@app.get("/input/{gpcode}", response_model=PredictionInputResponse, tags=["Inference"])
+def get_prediction_input(
+    gpcode: int,
+    date: str = Query(..., description="Available dataset date in YYYY-MM-DD format"),
+):
+    """Returns real weather, terrain, reference and optional observed values for inference."""
+    try:
+        parsed = datetime.strptime(date, "%Y-%m-%d")
+        if parsed.strftime("%Y-%m-%d") != date:
+            raise ValueError
+    except ValueError:
+        raise HTTPException(
+            status_code=status.HTTP_400_BAD_REQUEST,
+            detail=f"Invalid date '{date}'. Expected valid YYYY-MM-DD.",
+        )
+
+    result, inputs = get_data_service().get_prediction_input(gpcode=gpcode, date=date)
+    if result == "not_found":
+        raise HTTPException(
+            status_code=status.HTTP_404_NOT_FOUND,
+            detail=f"Panchayat with GPCODE {gpcode} not found.",
+        )
+    if result == "date_not_found":
+        raise HTTPException(
+            status_code=status.HTTP_404_NOT_FOUND,
+            detail=f"No source data found for GPCODE {gpcode} on {date}.",
+        )
+    if result == "unavailable":
+        raise HTTPException(
+            status_code=status.HTTP_503_SERVICE_UNAVAILABLE,
+            detail="The master input dataset is unavailable.",
+        )
+    if result == "incomplete":
+        raise HTTPException(
+            status_code=status.HTTP_422_UNPROCESSABLE_ENTITY,
+            detail=f"Model inputs are missing: {', '.join(inputs['missing_fields'])}.",
+        )
+    return PredictionInputResponse(**inputs)
+
 
 @app.post("/predict", response_model=PredictionResponse, tags=["Inference"])
 def predict_rainfall(request: PredictionRequest):

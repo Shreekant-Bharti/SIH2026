@@ -66,6 +66,21 @@ class PredictionResponse(BaseModel):
     model_version: str = "Ridge_Residual_v1"
 
 
+class PredictionInputResponse(BaseModel):
+    """Raw model inputs retrieved from the master dataset for one GP and date."""
+    gpcode: int
+    date: str
+    temperature: float
+    humidity: float
+    wind: float
+    et: float
+    elevation: float
+    slope: float
+    landcover: int
+    reference_rainfall: float
+    observed_rainfall_mm: Optional[float] = None
+
+
 class HealthResponse(BaseModel):
     """
     Response returned by GET /health.
@@ -138,7 +153,9 @@ class ValidationResponse(BaseModel):
     gpcode: int
     rmse: float
     mae: float
+    r2: float
     bias: float
     correlation: float
     baseline_rmse: float
+    baseline_mae: float
     model_rmse: float

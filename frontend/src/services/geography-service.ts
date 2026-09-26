@@ -1,7 +1,15 @@
 import { districtIndex as generatedDistrictIndex } from "@/data/geography/generated/districts";
 import { stateIndex as generatedStateIndex } from "@/data/geography/generated/states";
 import { INDIA_BOUNDS, DEFAULT_CENTER } from "@/config/map-config";
-import type { Bounds, RegionFeature, RegionFeatureCollection, RegionLevel, RegionMeta, SearchHit } from "@/types/geography";
+import { backendClient } from "@/services/backend-client";
+import type {
+  Bounds,
+  RegionFeature,
+  RegionFeatureCollection,
+  RegionLevel,
+  RegionMeta,
+  SearchHit,
+} from "@/types/geography";
 
 /**
  * Single access point for administrative geography.
@@ -21,14 +29,37 @@ const log = (...args: unknown[]) => {
   if (dev) console.info(...args);
 };
 
-const stateIndex: RegionMeta[] = generatedStateIndex.map((r) => ({ ...r, code: r.code ?? r.id, geometryStatus: "boundary" }));
-const districtIndex: RegionMeta[] = generatedDistrictIndex.map((r) => ({ ...r, code: r.code ?? r.id, geometryStatus: "boundary" }));
+const stateIndex: RegionMeta[] = generatedStateIndex.map((r) => ({
+  ...r,
+  code: r.code ?? r.id,
+  geometryStatus: "boundary",
+}));
+const districtIndex: RegionMeta[] = generatedDistrictIndex.map((r) => ({
+  ...r,
+  code: r.code ?? r.id,
+  geometryStatus: "boundary",
+}));
 
-export const INDIA: RegionMeta = { id: "india", name: "India", code: "IN", level: "country", bounds: INDIA_BOUNDS, center: DEFAULT_CENTER, geometryStatus: "boundary" };
+export const INDIA: RegionMeta = {
+  id: "india",
+  name: "India",
+  code: "IN",
+  level: "country",
+  bounds: INDIA_BOUNDS,
+  center: DEFAULT_CENTER,
+  geometryStatus: "boundary",
+};
 
-export const GEO_ATTRIBUTION = "State/district boundaries: geoBoundaries gbOpen IND (DataMeet / ECI), CC BY 2.5 IN. Block boundaries: Local Government Directory (LGD) 2024 block polygons, CC0, joined by LGD block code. Blocks without an LGD polygon: metadata coordinates.";
+export const GEO_ATTRIBUTION =
+  "State/district boundaries: geoBoundaries gbOpen IND (DataMeet / ECI), CC BY 2.5 IN. Block boundaries: Local Government Directory (LGD) 2024 block polygons, CC0, joined by LGD block code. Blocks without an LGD polygon: metadata coordinates.";
 
-export const LEVEL_LABEL: Record<RegionLevel, string> = { country: "Country", state: "State / UT", district: "District", block: "Block / Tehsil", panchayat: "Gram Panchayat" };
+export const LEVEL_LABEL: Record<RegionLevel, string> = {
+  country: "Country",
+  state: "State / UT",
+  district: "District",
+  block: "Block / Tehsil",
+  panchayat: "Gram Panchayat",
+};
 
 const byId = new Map<string, RegionMeta>();
 const children = new Map<string, RegionMeta[]>();
@@ -43,7 +74,10 @@ const register = (region: RegionMeta) => {
     children.set(region.parentId, list);
   }
   if (previous?.parentId && previous.parentId !== region.parentId) {
-    children.set(previous.parentId, (children.get(previous.parentId) ?? []).filter((item) => item.id !== region.id));
+    children.set(
+      previous.parentId,
+      (children.get(previous.parentId) ?? []).filter((item) => item.id !== region.id),
+    );
   }
 };
 [INDIA, ...stateIndex, ...districtIndex].forEach(register);
@@ -57,13 +91,35 @@ const notify = () => {
   listeners.forEach((fn) => fn());
 };
 
-const isFiniteCoord = (lon: unknown, lat: unknown) => typeof lon === "number" && typeof lat === "number" && Number.isFinite(lon) && Number.isFinite(lat) && !(lon === 0 && lat === 0) && Math.abs(lat) <= 90 && Math.abs(lon) <= 180;
-const pointBounds = (lon: number, lat: number): Bounds => [[lon, lat], [lon, lat]];
+const isFiniteCoord = (lon: unknown, lat: unknown) =>
+  typeof lon === "number" &&
+  typeof lat === "number" &&
+  Number.isFinite(lon) &&
+  Number.isFinite(lat) &&
+  !(lon === 0 && lat === 0) &&
+  Math.abs(lat) <= 90 &&
+  Math.abs(lon) <= 180;
+const pointBounds = (lon: number, lat: number): Bounds => [
+  [lon, lat],
+  [lon, lat],
+];
 
 // ---------- Blocks (points) ----------
 interface BlockFile {
   landcover: Record<string, string>;
-  blocks: [string, string, string, string, string, string, number, number, number, number, number][];
+  blocks: [
+    string,
+    string,
+    string,
+    string,
+    string,
+    string,
+    number,
+    number,
+    number,
+    number,
+    number,
+  ][];
 }
 let blocksPromise: Promise<void> | undefined;
 let blocksLoaded = false;
@@ -71,9 +127,21 @@ let blocksLoaded = false;
 // ---------- Panchayats (optional real datasets) ----------
 interface PanchayatManifest {
   metadataDatasets?: { file: string; districtId: string; source: string }[];
-  geometryDatasets?: { file: string; blockIdProperty: string; idProperty: string; nameProperty: string; source: string }[];
+  geometryDatasets?: {
+    file: string;
+    blockIdProperty: string;
+    idProperty: string;
+    nameProperty: string;
+    source: string;
+  }[];
   /** Backward-compatible geometry manifest key. */
-  datasets?: { file: string; blockIdProperty: string; idProperty: string; nameProperty: string; source: string }[];
+  datasets?: {
+    file: string;
+    blockIdProperty: string;
+    idProperty: string;
+    nameProperty: string;
+    source: string;
+  }[];
 }
 interface PanchayatMetadataFile {
   panchayats: [string, string, string, string, number, number, number][];
@@ -81,12 +149,73 @@ interface PanchayatMetadataFile {
 let panchayatPromise: Promise<void> | undefined;
 const panchayatFeatures = new Map<string, RegionFeature>();
 
+const normalizedName = (name: string) =>
+  name
+    .trim()
+    .toLocaleLowerCase()
+    .replace(/[^a-z0-9]/g, "");
+
+async function loadBackendPanchayats() {
+  try {
+    const { blocks: backendBlocks } = await backendClient.getBlocks();
+    const district = districtIndex.find((item) => item.id === "dhanbad--jharkhand");
+    if (!district) return;
+
+    for (const blockName of backendBlocks) {
+      let block = (children.get(district.id) ?? []).find(
+        (item) => normalizedName(item.name) === normalizedName(blockName),
+      );
+      if (!block) {
+        block = {
+          id: `backend-block-${normalizedName(blockName)}`,
+          name: blockName,
+          code: blockName,
+          level: "block",
+          parentId: district.id,
+          geometryStatus: "unavailable",
+        };
+        register(block);
+      }
+
+      const { panchayats } = await backendClient.getPanchayats(blockName);
+      for (const item of panchayats) {
+        const id = `gp-${item.gpcode}`;
+        if (byId.has(id)) continue;
+        register({
+          id,
+          name: item.name,
+          code: String(item.gpcode),
+          level: "panchayat",
+          parentId: block.id,
+          geometryStatus: "unavailable",
+        });
+      }
+    }
+
+    for (const list of children.values()) {
+      if (list[0]?.level === "block" || list[0]?.level === "panchayat") {
+        list.sort((a, b) => a.name.localeCompare(b.name) || a.code.localeCompare(b.code));
+      }
+    }
+    notify();
+  } catch (cause) {
+    log("[Geography] Backend Panchayat list unavailable", cause);
+  }
+}
+
 // ---------- GeoJSON validation ----------
-const validRing = (ring: unknown) => Array.isArray(ring) && ring.length >= 4 && ring.every((p) => Array.isArray(p) && isFiniteCoord(p[0], p[1]));
+const validRing = (ring: unknown) =>
+  Array.isArray(ring) &&
+  ring.length >= 4 &&
+  ring.every((p) => Array.isArray(p) && isFiniteCoord(p[0], p[1]));
 const validGeometry = (g: { type?: string; coordinates?: unknown } | null | undefined): boolean => {
   if (!g || !Array.isArray(g.coordinates)) return false;
   if (g.type === "Polygon") return g.coordinates.length > 0 && g.coordinates.every(validRing);
-  if (g.type === "MultiPolygon") return g.coordinates.length > 0 && g.coordinates.every((poly) => Array.isArray(poly) && poly.every(validRing));
+  if (g.type === "MultiPolygon")
+    return (
+      g.coordinates.length > 0 &&
+      g.coordinates.every((poly) => Array.isArray(poly) && poly.every(validRing))
+    );
   return false;
 };
 export function sanitizeCollection(input: unknown, label: string): RegionFeatureCollection {
@@ -120,8 +249,13 @@ const load = (key: string, url: string) => {
       if (!response.ok) throw new Error(`Failed to load ${url} (${response.status})`);
       const fc = sanitizeCollection(await response.json(), key);
       if (dev) {
-        if (fc.features.length === 0) console.error("[MonsoonScope Map]", `${key} geometry is empty or invalid`);
-        else console.info("[MonsoonScope Map]", `${key} geometry loaded: ${fc.features.length} features`);
+        if (fc.features.length === 0)
+          console.error("[MonsoonScope Map]", `${key} geometry is empty or invalid`);
+        else
+          console.info(
+            "[MonsoonScope Map]",
+            `${key} geometry loaded: ${fc.features.length} features`,
+          );
       }
       return fc;
     })
@@ -135,12 +269,26 @@ const load = (key: string, url: string) => {
 const empty = (): RegionFeatureCollection => ({ type: "FeatureCollection", features: [] });
 
 const featureBounds = (feature: RegionFeature): Bounds => {
-  let w = Infinity, s = Infinity, e = -Infinity, n = -Infinity;
-  const polys = feature.geometry.type === "Polygon" ? [feature.geometry.coordinates] : feature.geometry.coordinates;
-  for (const poly of polys) for (const ring of poly) for (const [x, y] of ring) {
-    w = Math.min(w, x!); s = Math.min(s, y!); e = Math.max(e, x!); n = Math.max(n, y!);
-  }
-  return [[w, s], [e, n]];
+  let w = Infinity,
+    s = Infinity,
+    e = -Infinity,
+    n = -Infinity;
+  const polys =
+    feature.geometry.type === "Polygon"
+      ? [feature.geometry.coordinates]
+      : feature.geometry.coordinates;
+  for (const poly of polys)
+    for (const ring of poly)
+      for (const [x, y] of ring) {
+        w = Math.min(w, x!);
+        s = Math.min(s, y!);
+        e = Math.max(e, x!);
+        n = Math.max(n, y!);
+      }
+  return [
+    [w, s],
+    [e, n],
+  ];
 };
 
 const mapLog = (...a: unknown[]) => {
@@ -150,7 +298,9 @@ const mapLog = (...a: unknown[]) => {
 let blockIndexPromise: Promise<Record<string, number>> | undefined;
 const loadBlockIndex = () => {
   blockIndexPromise ??= fetch("/geo/blocks/index.json")
-    .then(async (r) => (r.ok ? ((await r.json()) as { districts: Record<string, number> }).districts : {}))
+    .then(async (r) =>
+      r.ok ? ((await r.json()) as { districts: Record<string, number> }).districts : {},
+    )
     .catch(() => {
       blockIndexPromise = undefined;
       return {};
@@ -175,41 +325,53 @@ export function containsPoint(f: RegionFeature, x: number, y: number): boolean {
   if (!b) bboxCache.set(f, (b = featureBounds(f)));
   if (x < b[0][0] || x > b[1][0] || y < b[0][1] || y > b[1][1]) return false; // pre-filter only
   const polys = f.geometry.type === "Polygon" ? [f.geometry.coordinates] : f.geometry.coordinates;
-  return polys.some((poly) => poly.reduce((inside, ring) => (ringHits(ring as number[][], x, y) ? !inside : inside), false));
+  return polys.some((poly) =>
+    poly.reduce((inside, ring) => (ringHits(ring as number[][], x, y) ? !inside : inside), false),
+  );
 }
 
 /** Interior label point: midpoint of the widest interior span on a horizontal line through the largest polygon. */
 function labelPoint(f: RegionFeature): [number, number] | undefined {
   const props = f.properties as unknown as { labelLon?: number; labelLat?: number };
-  if (typeof props.labelLon === "number" && typeof props.labelLat === "number") return [props.labelLon, props.labelLat];
+  if (typeof props.labelLon === "number" && typeof props.labelLat === "number")
+    return [props.labelLon, props.labelLat];
   const polys = f.geometry.type === "Polygon" ? [f.geometry.coordinates] : f.geometry.coordinates;
   let best: number[][][] | undefined;
   let bestArea = -1;
   for (const poly of polys) {
     const ring = poly[0] as number[][];
     let a = 0;
-    for (let i = 0, j = ring.length - 1; i < ring.length; j = i++) a += (ring[j]![0]! * ring[i]![1]! - ring[i]![0]! * ring[j]![1]!);
-    if (Math.abs(a) > bestArea) { bestArea = Math.abs(a); best = poly as number[][][]; }
+    for (let i = 0, j = ring.length - 1; i < ring.length; j = i++)
+      a += ring[j]![0]! * ring[i]![1]! - ring[i]![0]! * ring[j]![1]!;
+    if (Math.abs(a) > bestArea) {
+      bestArea = Math.abs(a);
+      best = poly as number[][][];
+    }
   }
   if (!best) return undefined;
   const ys = best[0]!.map((p) => p[1]!);
-  const minY = Math.min(...ys), maxY = Math.max(...ys);
+  const minY = Math.min(...ys),
+    maxY = Math.max(...ys);
   let out: [number, number] | undefined;
   let widest = -1;
   for (const t of [0.5, 0.4, 0.6, 0.3, 0.7]) {
     const y = minY + (maxY - minY) * t;
     const xs: number[] = [];
-    for (const ring of best) for (let i = 0, j = ring.length - 1; i < ring.length; j = i++) {
-      const [xi, yi] = ring[i]!; const [xj, yj] = ring[j]!;
-      if (yi! > y !== yj! > y) xs.push(((xj! - xi!) * (y - yi!)) / (yj! - yi!) + xi!);
-    }
+    for (const ring of best)
+      for (let i = 0, j = ring.length - 1; i < ring.length; j = i++) {
+        const [xi, yi] = ring[i]!;
+        const [xj, yj] = ring[j]!;
+        if (yi! > y !== yj! > y) xs.push(((xj! - xi!) * (y - yi!)) / (yj! - yi!) + xi!);
+      }
     xs.sort((a, b) => a - b);
-    for (let k = 0; k + 1 < xs.length; k += 2) if (xs[k + 1]! - xs[k]! > widest) { widest = xs[k + 1]! - xs[k]!; out = [(xs[k]! + xs[k + 1]!) / 2, y]; }
+    for (let k = 0; k + 1 < xs.length; k += 2)
+      if (xs[k + 1]! - xs[k]! > widest) {
+        widest = xs[k + 1]! - xs[k]!;
+        out = [(xs[k]! + xs[k + 1]!) / 2, y];
+      }
   }
   return out;
 }
-
-
 
 export const geographyService = {
   subscribe(fn: () => void) {
@@ -228,15 +390,42 @@ export const geographyService = {
         if (!response.ok) throw new Error(`Block dataset failed to load (${response.status})`);
         const file = (await response.json()) as BlockFile;
         let count = 0;
-        for (const [id, name, districtId, code, srcState, srcDistrict, lon, lat, elevationM, slopeDeg, lc] of file.blocks) {
+        for (const [
+          id,
+          name,
+          districtId,
+          code,
+          srcState,
+          srcDistrict,
+          lon,
+          lat,
+          elevationM,
+          slopeDeg,
+          lc,
+        ] of file.blocks) {
           if (!byId.has(districtId) || !isFiniteCoord(lon, lat)) continue;
           register({
-            id, name, code, level: "block", parentId: districtId, center: [lon, lat], bounds: pointBounds(lon, lat), geometryStatus: "point",
-            attributes: { sourceStateName: srcState, sourceDistrictName: srcDistrict, elevationM, slopeDeg, landcoverClass: lc, landcoverName: file.landcover[String(lc)] ?? "Unknown" },
+            id,
+            name,
+            code,
+            level: "block",
+            parentId: districtId,
+            center: [lon, lat],
+            bounds: pointBounds(lon, lat),
+            geometryStatus: "point",
+            attributes: {
+              sourceStateName: srcState,
+              sourceDistrictName: srcDistrict,
+              elevationM,
+              slopeDeg,
+              landcoverClass: lc,
+              landcoverName: file.landcover[String(lc)] ?? "Unknown",
+            },
           });
           count += 1;
         }
-        for (const list of children.values()) if (list[0]?.level === "block") list.sort((a, b) => a.name.localeCompare(b.name));
+        for (const list of children.values())
+          if (list[0]?.level === "block") list.sort((a, b) => a.name.localeCompare(b.name));
         blocksLoaded = true;
         log("[Geography] Blocks loaded:", count);
         notify();
@@ -254,19 +443,26 @@ export const geographyService = {
     panchayatPromise ??= fetch("/geo/panchayats/manifest.json")
       .then(async (response) => {
         const type = response.headers.get("content-type") ?? "";
-        if (!response.ok || !type.includes("json")) {
-          log("[Geography] Panchayats loaded: 0 (no dataset supplied)");
-          return;
-        }
+        if (!response.ok || !type.includes("json")) return loadBackendPanchayats();
         const manifest = (await response.json()) as PanchayatManifest;
         let count = 0;
         for (const ds of manifest.metadataDatasets ?? []) {
           const metadataResponse = await fetch(`/geo/panchayats/${ds.file}`);
-          if (!metadataResponse.ok) throw new Error(`Panchayat metadata failed to load (${metadataResponse.status})`);
+          if (!metadataResponse.ok)
+            throw new Error(`Panchayat metadata failed to load (${metadataResponse.status})`);
           const metadata = (await metadataResponse.json()) as PanchayatMetadataFile;
-          for (const [gpCode, name, blockId, sourceBlockName, elevationM, slopeDeg, landcoverClass] of metadata.panchayats ?? []) {
+          for (const [
+            gpCode,
+            name,
+            blockId,
+            sourceBlockName,
+            elevationM,
+            slopeDeg,
+            landcoverClass,
+          ] of metadata.panchayats ?? []) {
             const block = byId.get(blockId);
-            if (!block || block.level !== "block" || !gpCode || !name || byId.has(`gp-${gpCode}`)) continue;
+            if (!block || block.level !== "block" || !gpCode || !name || byId.has(`gp-${gpCode}`))
+              continue;
             register({
               id: `gp-${gpCode}`,
               name,
@@ -280,7 +476,13 @@ export const geographyService = {
           }
         }
         for (const ds of [...(manifest.geometryDatasets ?? []), ...(manifest.datasets ?? [])]) {
-          const raw = (await (await fetch(`/geo/panchayats/${ds.file}`)).json()) as { features: { type: string; geometry: { type: string; coordinates: unknown }; properties: Record<string, unknown> }[] };
+          const raw = (await (await fetch(`/geo/panchayats/${ds.file}`)).json()) as {
+            features: {
+              type: string;
+              geometry: { type: string; coordinates: unknown };
+              properties: Record<string, unknown>;
+            }[];
+          };
           for (const f of raw.features ?? []) {
             const blockId = String(f.properties[ds.blockIdProperty] ?? "");
             const block = byId.get(blockId);
@@ -292,20 +494,48 @@ export const geographyService = {
             if (f.geometry?.type === "Point") {
               const [lon, lat] = f.geometry.coordinates as number[];
               if (!isFiniteCoord(lon, lat)) continue;
-              register({ ...existing, id, name, code, level: "panchayat", parentId: blockId, center: [lon!, lat!], bounds: pointBounds(lon!, lat!), geometryStatus: "point" });
+              register({
+                ...existing,
+                id,
+                name,
+                code,
+                level: "panchayat",
+                parentId: blockId,
+                center: [lon!, lat!],
+                bounds: pointBounds(lon!, lat!),
+                geometryStatus: "point",
+              });
             } else {
-              const feature = { type: "Feature", geometry: f.geometry, properties: { id, name, level: "panchayat", parentId: blockId } } as RegionFeature;
+              const feature = {
+                type: "Feature",
+                geometry: f.geometry,
+                properties: { id, name, level: "panchayat", parentId: blockId },
+              } as RegionFeature;
               if (!validGeometry(feature.geometry)) continue;
               const bounds = featureBounds(feature);
               panchayatFeatures.set(id, feature);
-              register({ ...existing, id, name, code, level: "panchayat", parentId: blockId, bounds, center: [(bounds[0][0] + bounds[1][0]) / 2, (bounds[0][1] + bounds[1][1]) / 2], geometryStatus: "boundary", geometry: feature });
+              register({
+                ...existing,
+                id,
+                name,
+                code,
+                level: "panchayat",
+                parentId: blockId,
+                bounds,
+                center: [(bounds[0][0] + bounds[1][0]) / 2, (bounds[0][1] + bounds[1][1]) / 2],
+                geometryStatus: "boundary",
+                geometry: feature,
+              });
             }
             count += 1;
           }
         }
-        for (const list of children.values()) if (list[0]?.level === "panchayat") list.sort((a, b) => a.name.localeCompare(b.name) || a.code.localeCompare(b.code));
+        for (const list of children.values())
+          if (list[0]?.level === "panchayat")
+            list.sort((a, b) => a.name.localeCompare(b.name) || a.code.localeCompare(b.code));
         log("[Geography] Panchayats loaded:", count);
         notify();
+        await loadBackendPanchayats();
       })
       .catch((cause: unknown) => {
         if (dev) console.error("[Geography] Panchayat load failed", cause);
@@ -319,9 +549,12 @@ export const geographyService = {
   getLocationById: (id?: string) => (id ? byId.get(id) : undefined),
   getRegion: (id?: string) => (id ? byId.get(id) : undefined),
   getStates: () => stateIndex,
-  getDistricts: (stateId: string) => (children.get(stateId) ?? []).filter((r) => r.level === "district"),
-  getBlocks: (districtId: string) => (children.get(districtId) ?? []).filter((r) => r.level === "block"),
-  getPanchayats: (blockId: string) => (children.get(blockId) ?? []).filter((r) => r.level === "panchayat"),
+  getDistricts: (stateId: string) =>
+    (children.get(stateId) ?? []).filter((r) => r.level === "district"),
+  getBlocks: (districtId: string) =>
+    (children.get(districtId) ?? []).filter((r) => r.level === "block"),
+  getPanchayats: (blockId: string) =>
+    (children.get(blockId) ?? []).filter((r) => r.level === "panchayat"),
   getChildren: (_level: RegionLevel, id: string) => children.get(id) ?? [],
   getParent: (region: RegionMeta) => (region.parentId ? byId.get(region.parentId) : undefined),
 
@@ -340,15 +573,22 @@ export const geographyService = {
   getPanchayatLocation: (id: string) => byId.get(id)?.center,
 
   /** Polygon layers loaded on demand. Only levels with real boundaries return features. */
-  getStateGeometry: async (id: string) => (await load("states", "/geo/states.json")).features.find((f) => f.properties.id === id),
+  getStateGeometry: async (id: string) =>
+    (await load("states", "/geo/states.json")).features.find((f) => f.properties.id === id),
   getDistrictGeometry: async (id: string) => {
     const region = byId.get(id);
-    return region?.parentId ? (await load(`districts:${region.parentId}`, `/geo/districts/${region.parentId}.json`)).features.find((f) => f.properties.id === id) : undefined;
+    return region?.parentId
+      ? (
+          await load(`districts:${region.parentId}`, `/geo/districts/${region.parentId}.json`)
+        ).features.find((f) => f.properties.id === id)
+      : undefined;
   },
   getBlockGeometry: async (id: string): Promise<RegionFeature | undefined> => {
     const region = byId.get(id);
     if (!region?.parentId) return undefined;
-    return (await geographyService.loadBlockBoundaries(region.parentId)).features.find((f) => f.properties.id === id);
+    return (await geographyService.loadBlockBoundaries(region.parentId)).features.find(
+      (f) => f.properties.id === id,
+    );
   },
   getPanchayatGeometry: async (id: string) => panchayatFeatures.get(id),
 
@@ -369,7 +609,17 @@ export const geographyService = {
       for (const f of fc.features) {
         const region = byId.get(f.properties.id);
         if (!region || region.level !== "block" || region.parentId !== districtId) continue;
-        register({ ...region, geometryStatus: "boundary", bounds: featureBounds(f), center: labelPoint(f) ?? region.center ?? [(featureBounds(f)[0][0] + featureBounds(f)[1][0]) / 2, (featureBounds(f)[0][1] + featureBounds(f)[1][1]) / 2], geometry: f });
+        register({
+          ...region,
+          geometryStatus: "boundary",
+          bounds: featureBounds(f),
+          center: labelPoint(f) ??
+            region.center ?? [
+              (featureBounds(f)[0][0] + featureBounds(f)[1][0]) / 2,
+              (featureBounds(f)[0][1] + featureBounds(f)[1][1]) / 2,
+            ],
+          geometry: f,
+        });
         n += 1;
       }
       mapLog(`Block geometry loaded: ${n} features (${districtId})`);
@@ -379,7 +629,10 @@ export const geographyService = {
   },
 
   /** Exact point-in-polygon detection down the hierarchy: state → district → block → panchayat. */
-  async detectAt(lon: number, lat: number): Promise<{ chain: RegionMeta[]; region?: RegionMeta; blockMissing: boolean }> {
+  async detectAt(
+    lon: number,
+    lat: number,
+  ): Promise<{ chain: RegionMeta[]; region?: RegionMeta; blockMissing: boolean }> {
     const chain: RegionMeta[] = [];
     const clog = (...a: unknown[]) => dev && console.info("[MonsoonScope Click]", ...a);
     clog(`Coordinates: ${lat.toFixed(6)}, ${lon.toFixed(6)}`);
@@ -392,7 +645,10 @@ export const geographyService = {
     }
     chain.push(stateMeta);
     clog("State:", stateMeta.name);
-    const districts = await load(`districts:${stateMeta.id}`, `/geo/districts/${stateMeta.id}.json`);
+    const districts = await load(
+      `districts:${stateMeta.id}`,
+      `/geo/districts/${stateMeta.id}.json`,
+    );
     const district = districts.features.find((f) => containsPoint(f, lon, lat));
     const districtMeta = district && byId.get(district.properties.id);
     if (!districtMeta) {
@@ -433,10 +689,13 @@ export const geographyService = {
   /** Child boundary polygons drawn inside a region (progressive disclosure). */
   async getChildPolygons(region: RegionMeta): Promise<RegionFeatureCollection> {
     if (region.level === "country") return load("states", "/geo/states.json");
-    if (region.level === "state") return load(`districts:${region.id}`, `/geo/districts/${region.id}.json`);
+    if (region.level === "state")
+      return load(`districts:${region.id}`, `/geo/districts/${region.id}.json`);
     if (region.level === "district") return geographyService.loadBlockBoundaries(region.id);
     const kids = children.get(region.id) ?? [];
-    const own = kids.flatMap((k) => (k.geometry && k.geometry.type === "Feature" ? [k.geometry] : []));
+    const own = kids.flatMap((k) =>
+      k.geometry && k.geometry.type === "Feature" ? [k.geometry] : [],
+    );
     // No Panchayat polygons: keep neighbouring block boundaries as lighter context.
     if (!own.length && region.parentId) {
       const parent = byId.get(region.parentId);
@@ -449,21 +708,34 @@ export const geographyService = {
   labelPoint: (f: RegionFeature) => labelPoint(f),
 
   /** Child regions that only have location points. */
-  getChildPoints: (region: RegionMeta) => (children.get(region.id) ?? []).filter((r) => r.geometryStatus === "point"),
+  getChildPoints: (region: RegionMeta) =>
+    (children.get(region.id) ?? []).filter((r) => r.geometryStatus === "point"),
 
   search(query: string, limit = 10): SearchHit[] {
     const term = query.trim().toLowerCase();
     if (term.length < 2) return [];
     const hits: RegionMeta[] = [];
-    for (const region of byId.values()) if (region.level !== "country" && region.name.toLowerCase().includes(term)) hits.push(region);
+    for (const region of byId.values())
+      if (region.level !== "country" && region.name.toLowerCase().includes(term)) hits.push(region);
     const rank = { state: 0, district: 1, block: 2, panchayat: 3, country: 4 };
     return hits
-      .sort((a, b) => Number(!a.name.toLowerCase().startsWith(term)) - Number(!b.name.toLowerCase().startsWith(term)) || rank[a.level] - rank[b.level] || a.name.localeCompare(b.name))
+      .sort(
+        (a, b) =>
+          Number(!a.name.toLowerCase().startsWith(term)) -
+            Number(!b.name.toLowerCase().startsWith(term)) ||
+          rank[a.level] - rank[b.level] ||
+          a.name.localeCompare(b.name),
+      )
       .slice(0, limit)
       .map((region) => ({
         region,
         levelLabel: LEVEL_LABEL[region.level],
-        context: geographyService.getAncestors(region).slice(1, -1).reverse().map((r) => r.name).join(", "),
+        context: geographyService
+          .getAncestors(region)
+          .slice(1, -1)
+          .reverse()
+          .map((r) => r.name)
+          .join(", "),
       }));
   },
 
